@@ -1,95 +1,164 @@
-.bannerSection {
-  text-align: center;
-  margin-bottom: 2rem;
+.service {
+  padding: 3rem 0 2rem 0;
+  background: #f7f8fa;
 }
 
 .cardsRow {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 2rem;
   flex-wrap: wrap;
-}
-
-.horizontalSections {
-  display: flex;
-  flex-direction: row;
   gap: 2rem;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.section {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.bannerImg {
-  width: 100%;
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.servicesImg,
-.destImg {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.service {
-  padding: 2rem;
-  background: #f8f8f8;
-  margin-top: 80px; /* Navbar ke niche space ke liye */
+  margin-bottom: 2.5rem;
 }
 
 .services {
-  background: #f0f8ff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
   min-width: 220px;
   max-width: 260px;
   text-align: center;
   margin-bottom: 1.5rem;
-  transition: 0.3s ease-in-out;
+  transition: transform 0.25s, box-shadow 0.25s;
   cursor: pointer;
+  border: 1px solid #f0f0f0;
 }
 
 .services:hover {
-  transform: translateX(0.5rem) translateY(-1rem);
-  box-shadow: rgb(0 0 0 / 40%) 0px 5px 15px;
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(255, 128, 0, 0.13);
+  border-color: #ff8000;
 }
 
-.services img {
-  width: 30px;
+.icon img {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 0.7rem;
+}
+
+.services h3 {
+  color: #ff8000;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .services p {
-  font-size: 0.9rem;
+  font-size: 0.97rem;
+  color: #444;
+}
+
+.section {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section h2 {
+  color: #ff8000;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.section h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sectionText {
+  text-align: center;
+  color: #333;
+  font-size: 1.07rem;
+  margin-top: 1rem;
+}
+
+.bannerImg {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  margin: 0 auto 1rem auto;
+  display: block;
+  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.06);
+}
+
+.servicesImg {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  margin: 0 auto 1.2rem auto;
+  display: block;
+  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.06);
+}
+
+.experienceBanner {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 2.5rem 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expLeft {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.expMainImg {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.08);
+}
+
+.expRight {
+  flex: 2 1 400px;
+}
+
+.expRight h2 {
+  color: #ff8000;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.expRight p {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 1.1rem;
+}
+
+.expImagesRow {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.expImagesRow img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.08);
 }
 
 .packageCards,
@@ -99,32 +168,77 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+  justify-content: center;
 }
 
-.packageCards>div,
-.benefitCards>div,
-.transparencyCards>div,
-.returnsCards>div {
-  background: #f0f0f0;
-  padding: 1rem;
-  border-radius: 8px;
-  flex: 1;
+.packageCards > div,
+.benefitCards > div,
+.transparencyCards > div,
+.returnsCards > div {
+  background: #f7f8fa;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  flex: 1 1 220px;
   min-width: 220px;
+  max-width: 320px;
   margin-bottom: 1rem;
+  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.06);
+  border: 1px solid #f0f0f0;
+  text-align: center;
 }
 
-.section h2 {
-  color: #ff8000;
-  margin-bottom: 1rem;
-}
-
-.section h3 {
-  color: #222;
-  margin-bottom: 0.5rem;
-}
-
-.section ul {
-  margin-top: 1rem;
+.serviceList {
+  margin-top: 1.2rem;
   padding-left: 1.5rem;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.serviceList li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+@media (max-width: 900px) {
+  .experienceBanner {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .expLeft,
+  .expRight {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section,
+  .experienceBanner {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cardsRow,
+  .packageCards,
+  .benefitCards,
+  .transparencyCards,
+  .returnsCards {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .services,
+  .packageCards > div,
+  .benefitCards > div,
+  .transparencyCards > div,
+  .returnsCards > div {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .expImagesRow {
+    gap: 0.5rem;
+  }
+  .expImagesRow img {
+    width: 60px;
+    height: 45px;
+  }
 }
