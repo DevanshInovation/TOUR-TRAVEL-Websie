@@ -1,0 +1,100 @@
+.bestPriceContainer {
+  padding: 2rem;
+  background: #f8f8f8;
+}
+.section {
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+.bannerImg, .servicesImg, .destImg {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+}
+.packageCards, .benefitCards, .transparencyCards, .returnsCards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.packageCards > div, .benefitCards > div, .transparencyCards > div, .returnsCards > div {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 220px;
+}
+.section h2 {
+  color: #ff8000;
+  margin-bottom: 1rem;
+}
+.section h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.section ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+.experienceBanner {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.expLeft {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expMainImg {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.expRight {
+  flex: 2;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.expRight h2 {
+  margin-bottom: 1rem;
+  color: #ff8000;
+}
+
+.expRight p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.expImagesRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.expImagesRow img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  background: #f8f8f8;
+}
