@@ -1,5 +1,4 @@
 import React from "react";
-// import Classes from "../Styles/Services.module.css";
 import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
 import service3 from "../assets/service3.png";
@@ -7,13 +6,10 @@ import service4 from "../assets/service4.png";
 import tumexploreImg from "../assets/explore.png";
 import servicesImg from "../assets/services.png";
 import Classes from "../Styles/Services.module.css";
-import experienceImg from "../assets/experience.jpg"; // left side big image
-import exp1 from "../assets/exp1.jpg"; // bottom images
+import experienceImg from "../assets/experience.jpg";
+import exp1 from "../assets/exp1.jpg";
 import exp2 from "../assets/exp2.jpg";
 import exp3 from "../assets/exp3.jpg";
-
-// import domesticImg from "../assets/domestic.png"; // Uncomment if image exists
-// import internationalImg from "../assets/international.png"; // Uncomment if image exists
 
 function Service() {
   return (
@@ -22,50 +18,75 @@ function Service() {
       <div className={Classes.cardsRow}>
         <div className={Classes.services}>
           <div className={Classes.icon}>
-            <img src={service1} alt="" />
+            <img src={service1} alt="Best Prices" />
           </div>
           <h3>Get Best Prices</h3>
-          <p>Pay through our application and save thousands and get amazing rewards.</p>
+          <p>
+            Pay through our application and save thousands while earning amazing
+            rewards.
+          </p>
         </div>
         <div className={Classes.services}>
           <div className={Classes.icon}>
-            <img src={service2} alt="" />
+            <img src={service2} alt="Covid Safe" />
           </div>
           <h3>Covid Safe</h3>
-          <p>We have all the curated hotels that have all the precaution for a covid safe environment.</p>
+          <p>
+            All our curated hotels follow strict precautions for a covid-safe
+            environment.
+          </p>
         </div>
         <div className={Classes.services}>
           <div className={Classes.icon}>
-            <img src={service3} alt="" />
+            <img src={service3} alt="Flexible Payment" />
           </div>
           <h3>Flexible Payment</h3>
-          <p>Enjoy the flexible payment through our app and get rewards on every payment.</p>
+          <p>
+            Enjoy flexible payment options and get rewards on every payment.
+          </p>
         </div>
         <div className={Classes.services}>
           <div className={Classes.icon}>
-            <img src={service4} alt="" />
+            <img src={service4} alt="Find The Best Near You" />
           </div>
           <h3>Find The Best Near You</h3>
-          <p>Find the best hotels and places to visit near you in a single click.</p>
+          <p>
+            Discover the best hotels and places to visit near you in a single
+            click.
+          </p>
         </div>
       </div>
 
       {/* Best Price Details */}
       <div className={Classes.section}>
-        <h1>Best Price Page Loaded!</h1>
-        <img src={tumexploreImg} alt="Explore the World" className={Classes.bannerImg} />
-        <p>Get special deals for memberships, holiday packages, events & resorts with CDSPL.</p>
+        <img
+          src={tumexploreImg}
+          alt="Explore the World"
+          className={Classes.bannerImg}
+        />
+        <p className={Classes.sectionText}>
+          Get special deals for memberships, holiday packages, events & resorts
+          with CDSPL.
+        </p>
       </div>
 
       {/* Company Experience */}
       <div className={Classes.experienceBanner}>
         <div className={Classes.expLeft}>
-          <img src={experienceImg} alt="Experience" className={Classes.expMainImg} />
+          <img
+            src={experienceImg}
+            alt="Experience"
+            className={Classes.expMainImg}
+          />
         </div>
         <div className={Classes.expRight}>
-          <h2>Chhaya's Ultimate 17 Year+ Global Travel Experience</h2>
+          <h2>Chhaya's Ultimate 17+ Year Global Travel Experience</h2>
           <p>
-            Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt. Ltd., offers special deals on memberships, holiday packages, events, and resorts. With over 17 years of experience, it has escorted lakhs of travellers worldwide, specializing in customized holidays, incentive travel, and venue bookings.
+            Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt.
+            Ltd., offers special deals on memberships, holiday packages, events,
+            and resorts. With over 17 years of experience, we have escorted
+            lakhs of travellers worldwide, specializing in customized holidays,
+            incentive travel, and venue bookings.
           </p>
           <div className={Classes.expImagesRow}>
             <img src={exp1} alt="Kerala" />
@@ -75,22 +96,36 @@ function Service() {
         </div>
       </div>
 
-
       {/* Package Details */}
       <div className={Classes.section}>
         <h2>Comprehensive Premium Travel Package Details</h2>
         <div className={Classes.packageCards}>
           <div>
             <h3>One-Time Payment</h3>
-            <p>6 Days 5 Nights<br />₹7,50,000 grant you a decade of complete travel access without any additional fees.</p>
+            <p>
+              6 Days 5 Nights
+              <br />
+              ₹7,50,000 grants you a decade of complete travel access with no
+              additional fees.
+            </p>
           </div>
           <div>
             <h3>Duration & Coverage</h3>
-            <p>6 Days 5 Nights<br />Enjoy 10 years of unlimited travel. The package includes 1 male adult, 1 female adult, 2 children eligible as per policy.</p>
+            <p>
+              6 Days 5 Nights
+              <br />
+              Enjoy 10 years of unlimited travel. Includes 1 male adult, 1
+              female adult, and 2 children as per policy.
+            </p>
           </div>
           <div>
             <h3>Annual Limit</h3>
-            <p>6 Days 5 Nights<br />Up to 50 nights for 10 years to explore multiple destinations, flexibly planned for your family.</p>
+            <p>
+              6 Days 5 Nights
+              <br />
+              Up to 50 nights for 10 years to explore multiple destinations,
+              flexibly planned for your family.
+            </p>
           </div>
         </div>
       </div>
@@ -101,15 +136,24 @@ function Service() {
         <div className={Classes.benefitCards}>
           <div>
             <h3>Luxury-Seeking Families</h3>
-            <p>Stress-free annual vacations with unforgettable memories for the entire family.</p>
+            <p>
+              Stress-free annual vacations with unforgettable memories for the
+              entire family.
+            </p>
           </div>
           <div>
             <h3>Professionals & Retirees</h3>
-            <p>Explore the world with peace of mind, enjoying financial and lifestyle rewards simultaneously.</p>
+            <p>
+              Explore the world with peace of mind, enjoying financial and
+              lifestyle rewards.
+            </p>
           </div>
           <div>
             <h3>Astute Investors</h3>
-            <p>Earn passive value from travel investments with robust refund policies and exclusive benefits.</p>
+            <p>
+              Earn passive value from travel investments with robust refund
+              policies and exclusive benefits.
+            </p>
           </div>
         </div>
       </div>
@@ -120,15 +164,23 @@ function Service() {
         <div className={Classes.transparencyCards}>
           <div>
             <h3>One-Time Investment</h3>
-            <p>No renewals or annual fees. Pure luxury with financial clarity.</p>
+            <p>
+              No renewals or annual fees. Pure luxury with financial clarity.
+            </p>
           </div>
           <div>
             <h3>Inclusive Service</h3>
-            <p>Complete travel and accommodation management by our expert concierge team.</p>
+            <p>
+              Complete travel and accommodation management by our expert
+              concierge team.
+            </p>
           </div>
           <div>
             <h3>Guaranteed Premium Experience</h3>
-            <p>Limited availability ensures dedicated, personalized service for every client.</p>
+            <p>
+              Limited availability ensures dedicated, personalized service for
+              every client.
+            </p>
           </div>
         </div>
       </div>
@@ -139,15 +191,24 @@ function Service() {
         <div className={Classes.returnsCards}>
           <div>
             <h3>Free Travel</h3>
-            <p>Explore global destinations for 10 years without additional expense on flights or hotels.</p>
+            <p>
+              Explore global destinations for 10 years without additional
+              expense on flights or hotels.
+            </p>
           </div>
           <div>
             <h3>Full Investment Return</h3>
-            <p>Your ₹7,50,000 investment is refunded fully over 10 years, with automatic yearly payouts.</p>
+            <p>
+              Your ₹7,50,000 investment is refunded fully over 10 years, with
+              automatic yearly payouts.
+            </p>
           </div>
           <div>
             <h3>Experience Value</h3>
-            <p>Create precious memories for your family worth several lakhs every year.</p>
+            <p>
+              Create precious memories for your family worth several lakhs every
+              year.
+            </p>
           </div>
         </div>
       </div>
@@ -155,42 +216,20 @@ function Service() {
       {/* Services Section */}
       <div className={Classes.section}>
         <h2>Our Services</h2>
-        <img src={servicesImg} alt="Our Services" className={Classes.servicesImg} />
-        <ul>
+        <img
+          src={servicesImg}
+          alt="Our Services"
+          className={Classes.servicesImg}
+        />
+        {/* <ul className={Classes.serviceList}>
           <li>Tour Guide</li>
           <li>Administration</li>
           <li>Transport</li>
           <li>Hotel Reservation</li>
           <li>Meals</li>
           <li>Ticketing</li>
-        </ul>
+        </ul> */}
       </div>
-
-      {/* Destinations Section (Uncomment if images exist)
-      <div className={Classes.section}>
-        <h2>Domestic Destinations</h2>
-        <img src={domesticImg} alt="Domestic Destinations" className={Classes.destImg} />
-        <p>
-          <strong>North India:</strong> Agra, Shimla, Manali, Delhi, Srinagar, Mussoorie, Jim Corbett, Lucknow, Amritsar, Punjab, Chandigarh, Haridwar, Dharamshala, Dalhousie, Nainital, Pahalgam, Gulmarg, Rishikesh, Almora, Kasauni, Ranikhet, Jabalpur
-        </p>
-        <p>
-          <strong>South India:</strong> Munnar, Kovalam, Ooty, Hyderabad, Chennai, Bengaluru, Mysore, Madurai, Rameshwaram, Puducherry, Kodaikanal, Kanyakumari, Vishakhapatnam, Thekkady, Coorg, Kumarakom, Alleppey, Wayanad, Tirupati, Hampi, Araku Valley, Kochi, Mangaluru
-        </p>
-        <p>
-          <strong>East India:</strong> Kanha, Darjeeling, Gangtok, Kolkata, Puri, Shillong, Pelling, Bhubaneswar, Guwahati, Patna, Jamshedpur, Ranchi, Andaman, Sundarban, Kalimpong, Port Blair, Havelock Island, Neil Island, Kaziranga, Cherrapunjee, Lachung, Shantiniketan, Siliguri, Varanasi
-        </p>
-        <p>
-          <strong>West India:</strong> Goa, Jaipur, Udaipur, Mumbai, Ahmedabad, Pune, Vadodara, Pushkar, Surat, Somnath, Mount Abu, Jaisalmer, Jodhpur, Bikaner, Gir, Mahabaleshwar, Nagpur, Nashik, Lonavla, Aurangabad, Ranthambore, Bhopal, Indore
-        </p>
-      </div> */}
-
-      {/* <div className={Classes.section}>
-        <h2>International Destinations</h2>
-        <img src={internationalImg} alt="International Destinations" className={Classes.destImg} />
-        <p>
-          Dubai, Singapore, Bangkok, Kuala Lumpur, Hong Kong, Kathmandu, Switzerland, Ho Chi Minh, Pattaya, Phuket, Hanoi, Siam Rep, Genting Highland, Australia, Indonesia, Sri Lanka, Vietnam, Japan, Thimphu, Paro, Krabi, Macau, Colombo, Bentota, Dhaka, Pokhra, Thailand, Bali, Maldives, Paris, London, Kenia, United States
-        </p>
-      </div> */}
     </section>
   );
 }

@@ -28,16 +28,6 @@ function Hero() {
             <input type="text" placeholder="search your location" />
           </div>
 
-          <div className={Classes.search}>
-            <label>Check in</label>
-            <input type="date" />
-          </div>
-
-          <div className={Classes.search}>
-            <label>Check out</label>
-            <input type="date" />
-          </div>
-
           <button>book now</button>
         </div>
       </div>
