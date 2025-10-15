@@ -7,6 +7,7 @@ import BestPrice from "./Components/BestPrice";
 import Recommendation from "./Components/Recommendation";
 import Testimonials from "./Components/Testimonials";
 import Footer from "./Components/Footer";
+import InquiryForm from "./Components/InquiryForm";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/bestprice" element={<BestPrice />} />
         <Route path="/places" element={<Recommendation />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/inquire" element={<InquiryForm/>} />
       </Routes>
       <Footer />
     </Router>
