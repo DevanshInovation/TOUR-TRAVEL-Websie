@@ -10,6 +10,10 @@ import experienceImg from "../assets/experience.jpg";
 import exp1 from "../assets/exp1.jpg";
 import exp2 from "../assets/exp2.jpg";
 import exp3 from "../assets/exp3.jpg";
+import backgroundImg1 from "../assets/backgroundImg1.jpg";
+import backgroundImg2 from "../assets/backgroundImg2.jpg";
+import backgroundImg3 from "../assets/backgroundImg3.jpg";
+import backgroundImg4 from "../assets/backgroundImg4.jpg";
 
 function Service() {
   return (
@@ -98,117 +102,137 @@ function Service() {
 
       {/* Package Details */}
       <div className={Classes.section}>
-        <h2>Comprehensive Premium Travel Package Details</h2>
-        <div className={Classes.packageCards}>
-          <div>
-            <h3>One-Time Payment</h3>
-            <p>
-              6 Days 5 Nights
-              <br />
-              ₹7,50,000 grants you a decade of complete travel access with no
-              additional fees.
-            </p>
-          </div>
-          <div>
-            <h3>Duration & Coverage</h3>
-            <p>
-              6 Days 5 Nights
-              <br />
-              Enjoy 10 years of unlimited travel. Includes 1 male adult, 1
-              female adult, and 2 children as per policy.
-            </p>
-          </div>
-          <div>
-            <h3>Annual Limit</h3>
-            <p>
-              6 Days 5 Nights
-              <br />
-              Up to 50 nights for 10 years to explore multiple destinations,
-              flexibly planned for your family.
-            </p>
+        <div className={Classes.backgroundImgOverlay}>
+          <img src={backgroundImg1} alt="backgroundImg1" />
+          <div className={Classes.overlayContent}>
+            <h2>Comprehensive Premium Travel Package Details</h2>
+            <div className={Classes.packageCards}>
+              <div>
+                <h3>One-Time Payment</h3>
+                <p>
+                  6 Days 5 Nights
+                  <br />
+                  ₹7,50,000 grants you a decade of complete travel access with no
+                  additional fees.
+                </p>
+              </div>
+              <div>
+                <h3>Duration & Coverage</h3>
+                <p>
+                  6 Days 5 Nights
+                  <br />
+                  Enjoy 10 years of unlimited travel. Includes 1 male adult, 1
+                  female adult, and 2 children as per policy.
+                </p>
+              </div>
+              <div>
+                <h3>Annual Limit</h3>
+                <p>
+                  6 Days 5 Nights
+                  <br />
+                  Up to 50 nights for 10 years to explore multiple destinations,
+                  flexibly planned for your family.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Who Benefits Section */}
       <div className={Classes.section}>
-        <h2>Who Benefits the Most from this Package?</h2>
-        <div className={Classes.benefitCards}>
-          <div>
-            <h3>Luxury-Seeking Families</h3>
-            <p>
-              Stress-free annual vacations with unforgettable memories for the
-              entire family.
-            </p>
-          </div>
-          <div>
-            <h3>Professionals & Retirees</h3>
-            <p>
-              Explore the world with peace of mind, enjoying financial and
-              lifestyle rewards.
-            </p>
-          </div>
-          <div>
-            <h3>Astute Investors</h3>
-            <p>
-              Earn passive value from travel investments with robust refund
-              policies and exclusive benefits.
-            </p>
+        <div className={Classes.backgroundImgOverlay}>
+          <img src={backgroundImg2} alt="backgroundImg2" />
+          <div className={Classes.overlayContent}>
+            <h2>Who Benefits the Most from this Package?</h2>
+            <div className={Classes.benefitCards}>
+              <div>
+                <h3>Luxury-Seeking Families</h3>
+                <p>
+                  Stress-free annual vacations with unforgettable memories for the
+                  entire family.
+                </p>
+              </div>
+              <div>
+                <h3>Professionals & Retirees</h3>
+                <p>
+                  Explore the world with peace of mind, enjoying financial and
+                  lifestyle rewards.
+                </p>
+              </div>
+              <div>
+                <h3>Astute Investors</h3>
+                <p>
+                  Earn passive value from travel investments with robust refund
+                  policies and exclusive benefits.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Transparency & Reliability */}
       <div className={Classes.section}>
-        <h2>Transparency, Reliability, and Hassle-Free Luxury</h2>
-        <div className={Classes.transparencyCards}>
-          <div>
-            <h3>One-Time Investment</h3>
-            <p>
-              No renewals or annual fees. Pure luxury with financial clarity.
-            </p>
-          </div>
-          <div>
-            <h3>Inclusive Service</h3>
-            <p>
-              Complete travel and accommodation management by our expert
-              concierge team.
-            </p>
-          </div>
-          <div>
-            <h3>Guaranteed Premium Experience</h3>
-            <p>
-              Limited availability ensures dedicated, personalized service for
-              every client.
-            </p>
+        <div className={Classes.backgroundImgOverlay}>
+          <img src={backgroundImg3} alt="backgroundImg3" />
+          <div className={Classes.overlayContent}>
+            <h2>Transparency, Reliability, and Hassle-Free Luxury</h2>
+            <div className={Classes.transparencyCards}>
+              <div>
+                <h3>One-Time Investment</h3>
+                <p>
+                  No renewals or annual fees. Pure luxury with financial clarity.
+                </p>
+              </div>
+              <div>
+                <h3>Inclusive Service</h3>
+                <p>
+                  Complete travel and accommodation management by our expert
+                  concierge team.
+                </p>
+              </div>
+              <div>
+                <h3>Guaranteed Premium Experience</h3>
+                <p>
+                  Limited availability ensures dedicated, personalized service for
+                  every client.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Net Returns Section */}
       <div className={Classes.section}>
-        <h2>Your Net Returns: Travel Cost-Free for a Decade</h2>
-        <div className={Classes.returnsCards}>
-          <div>
-            <h3>Free Travel</h3>
-            <p>
-              Explore global destinations for 10 years without additional
-              expense on flights or hotels.
-            </p>
-          </div>
-          <div>
-            <h3>Full Investment Return</h3>
-            <p>
-              Your ₹7,50,000 investment is refunded fully over 10 years, with
-              automatic yearly payouts.
-            </p>
-          </div>
-          <div>
-            <h3>Experience Value</h3>
-            <p>
-              Create precious memories for your family worth several lakhs every
-              year.
-            </p>
+        <div className={Classes.backgroundImgOverlay}>
+          <img src={backgroundImg4} alt="backgroundImg4" />
+          <div className={Classes.overlayContent}>
+            <h2>Your Net Returns: Travel Cost-Free for a Decade</h2>
+            <div className={Classes.returnsCards}>
+              <div>
+                <h3>Free Travel</h3>
+                <p>
+                  Explore global destinations for 10 years without additional
+                  expense on flights or hotels.
+                </p>
+              </div>
+              <div>
+                <h3>Full Investment Return</h3>
+                <p>
+                  Your ₹7,50,000 investment is refunded fully over 10 years, with
+                  automatic yearly payouts.
+                </p>
+              </div>
+              <div>
+                <h3>Experience Value</h3>
+                <p>
+                  Create precious memories for your family worth several lakhs every
+                  year.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

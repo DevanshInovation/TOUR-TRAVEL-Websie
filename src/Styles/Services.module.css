@@ -161,6 +161,100 @@
   box-shadow: 0 1px 6px rgba(255, 128, 0, 0.08);
 }
 
+/* Overlay background image card styles */
+.backgroundImgOverlay {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.backgroundImgOverlay img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  filter: brightness(60%);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  min-height: 340px;
+}
+
+.overlayContent h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.overlayContent .packageCards,
+.overlayContent .benefitCards,
+.overlayContent .transparencyCards,
+.overlayContent .returnsCards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlayContent .packageCards > div,
+.overlayContent .benefitCards > div,
+.overlayContent .transparencyCards > div,
+.overlayContent .returnsCards > div {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  margin-bottom: 1rem;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+.overlayContent .packageCards > div h3,
+.overlayContent .benefitCards > div h3,
+.overlayContent .transparencyCards > div h3,
+.overlayContent .returnsCards > div h3 {
+  color: #ffd7b3;
+}
+
+.overlayContent .packageCards > div p,
+.overlayContent .benefitCards > div p,
+.overlayContent .transparencyCards > div p,
+.overlayContent .returnsCards > div p {
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.13);
+}
+
 .packageCards,
 .benefitCards,
 .transparencyCards,
@@ -200,6 +294,7 @@
   list-style: disc;
 }
 
+/* Responsive overlay */
 @media (max-width: 900px) {
   .experienceBanner {
     flex-direction: column;
@@ -222,7 +317,11 @@
   .packageCards,
   .benefitCards,
   .transparencyCards,
-  .returnsCards {
+  .returnsCards,
+  .overlayContent .packageCards,
+  .overlayContent .benefitCards,
+  .overlayContent .transparencyCards,
+  .overlayContent .returnsCards {
     flex-direction: column;
     gap: 1.2rem;
   }
@@ -230,7 +329,11 @@
   .packageCards > div,
   .benefitCards > div,
   .transparencyCards > div,
-  .returnsCards > div {
+  .returnsCards > div,
+  .overlayContent .packageCards > div,
+  .overlayContent .benefitCards > div,
+  .overlayContent .transparencyCards > div,
+  .overlayContent .returnsCards > div {
     max-width: 100%;
     min-width: 0;
   }
@@ -240,5 +343,16 @@
   .expImagesRow img {
     width: 60px;
     height: 45px;
+  }
+  .backgroundImgOverlay,
+  .backgroundImgOverlay img,
+  .overlayContent {
+    min-height: 220px;
+  }
+  .overlayContent {
+    padding: 1.2rem 0.5rem;
+  }
+  .overlayContent h2 {
+    font-size: 1.2rem;
   }
 }
