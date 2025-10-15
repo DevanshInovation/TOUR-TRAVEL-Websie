@@ -9,7 +9,7 @@ function Home() {
     <>
       <Hero />
       <Service />
-      <Recommendation />
+      {/* <Recommendation /> */}
       <Testimonials />
     </>
   );

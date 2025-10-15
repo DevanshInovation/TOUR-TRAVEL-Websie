@@ -1,0 +1,96 @@
+.footer {
+  background: #181c2a;
+  color: #fff;
+  padding: 2.5rem 0 1rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.section {
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff8800;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: #ff8800;
+}
+
+.section p,
+.section a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.section a:hover {
+  color: #ff8800;
+  text-decoration: underline;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: #ff8800;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #aaa;
+  border-top: 1px solid #23263a;
+  padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  .section {
+    min-width: 0;
+  }
+}
