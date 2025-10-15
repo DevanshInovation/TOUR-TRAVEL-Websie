@@ -52,28 +52,28 @@ function Service() {
 
       {/* Best Price Details */}
       <div className={Classes.section}>
-        <h1>Best Price Page Loaded!</h1>
+        {/* <h1>Best Price Page Loaded!</h1> */}
         <img src={tumexploreImg} alt="Explore the World" className={Classes.bannerImg} />
-        <p>Get special deals for memberships, holiday packages, events & resorts with CDSPL.</p>
+        {/* <p>Get special deals for memberships, holiday packages, events & resorts with CDSPL.</p> */}
       </div>
 
-      {/* Company Experience */}
-      <div className={Classes.experienceBanner}>
-        <div className={Classes.expLeft}>
-          <img src={experienceImg} alt="Experience" className={Classes.expMainImg} />
+      <div className={Classes.experienceSection}>
+        {/* Heading Line */}
+        <div className={Classes.experienceHeading}>
+          Chhaya's Ultimate 17 Year+ Global Travel Experience
         </div>
-        <div className={Classes.expRight}>
-          <h2>Chhaya's Ultimate 17 Year+ Global Travel Experience</h2>
-          <p>
-            Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt. Ltd., offers special deals on memberships, holiday packages, events, and resorts. With over 17 years of experience, it has escorted lakhs of travellers worldwide, specializing in customized holidays, incentive travel, and venue bookings.
-          </p>
-          <div className={Classes.expImagesRow}>
-            <img src={exp1} alt="Kerala" />
-            <img src={exp2} alt="Delhi" />
-            <img src={exp3} alt="Rajasthan" />
-          </div>
+        {/* Blue Box with Description */}
+        <div className={Classes.experienceDescBox}>
+          Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt. Ltd., offers special deals on memberships, holiday packages, events, and resorts. With over 17 years of experience, it has escorted lakhs of travellers worldwide, specializing in customized holidays, incentive travel, and venue bookings.
+        </div>
+        {/* Images Row */}
+        <div className={Classes.expImagesRow}>
+          <img src={exp1} alt="Kerala" />
+          <img src={exp2} alt="Delhi" />
+          <img src={exp3} alt="Rajasthan" />
         </div>
       </div>
+
 
 
       {/* Package Details */}
