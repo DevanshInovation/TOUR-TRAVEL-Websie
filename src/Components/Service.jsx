@@ -3,7 +3,10 @@ import service1 from "../assets/service1.png";
 import service2 from "../assets/service2.png";
 import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
-import tumexploreImg from "../assets/explore.png";
+import heroBg from "../assets/yourbg.jpg";
+import Logo from "../assets/logo2.png";
+import bgImg from "../assets/benefits-bg.jpg";
+import bgImg1 from "../assets/tpd.jpg";
 import servicesImg from "../assets/services.png";
 import Classes from "../Styles/Services.module.css";
 import experienceImg from "../assets/experience.jpg";
@@ -62,16 +65,21 @@ function Service() {
       </div>
 
       {/* Best Price Details */}
-      <div className={Classes.section}>
-        <img
-          src={tumexploreImg}
-          alt="Explore the World"
-          className={Classes.bannerImg}
-        />
-        <p className={Classes.sectionText}>
-          Get special deals for memberships, holiday packages, events & resorts
-          with CDSPL.
-        </p>
+      <div className={Classes.heroBannerSection}>
+        <div
+          className={Classes.heroBannerBg}
+          style={{ backgroundImage: `url(${heroBg})` }}
+        >
+          <img src={Logo} alt="CDSPL Logo" className={Classes.heroLogo} />
+          <div className={Classes.heroExplore}>EXPLORE</div>
+          <div className={Classes.heroBigTitle}>THE WORLD</div>
+          <div className={Classes.heroOutlineBox}>
+            A UNIT OF CHHAYA DEVELOPMENT SERVICES PVT. LTD.
+          </div>
+          <div className={Classes.heroSubText}>
+            GET SPECIAL DEALS FOR MEMBERSHIPS, HOLIDAYS PACKAGES, EVENTS & RESORTS
+          </div>
+        </div>
       </div>
 
       {/* Company Experience */}
@@ -101,72 +109,54 @@ function Service() {
       </div>
 
       {/* Package Details */}
-      <div className={Classes.section}>
-        <div className={Classes.backgroundImgOverlay}>
-          <img src={backgroundImg1} alt="backgroundImg1" />
-          <div className={Classes.overlayContent}>
-            <h2>Comprehensive Premium Travel Package Details</h2>
-            <div className={Classes.packageCards}>
-              <div>
-                <h3>One-Time Payment</h3>
-                <p>
-                  6 Days 5 Nights
-                  <br />
-                  ₹7,50,000 grants you a decade of complete travel access with no
-                  additional fees.
-                </p>
-              </div>
-              <div>
-                <h3>Duration & Coverage</h3>
-                <p>
-                  6 Days 5 Nights
-                  <br />
-                  Enjoy 10 years of unlimited travel. Includes 1 male adult, 1
-                  female adult, and 2 children as per policy.
-                </p>
-              </div>
-              <div>
-                <h3>Annual Limit</h3>
-                <p>
-                  6 Days 5 Nights
-                  <br />
-                  Up to 50 nights for 10 years to explore multiple destinations,
-                  flexibly planned for your family.
-                </p>
-              </div>
+      <div className={Classes.overlayBgWrap}>
+        <img src={bgImg1} alt="Premium Package" className={Classes.overlayBgImg} />
+        <div className={Classes.overlayContent}>
+          <h2>Comprehensive Premium Travel Package Details</h2>
+          <div className={Classes.packageCardGrid}>
+            <div>
+              <h3>One-Time Payment</h3>
+              <p>
+                6 Days 5 Nights<br />
+                ₹7,50,000 grants you a decade of complete travel access with no additional fees.
+              </p>
+            </div>
+            <div>
+              <h3>Duration & Coverage</h3>
+              <p>
+                6 Days 5 Nights<br />
+                Enjoy 10 years of unlimited travel.<br />
+                Includes 1 male adult, 1 female adult, and 2 children as per policy.
+              </p>
+            </div>
+            <div>
+              <h3>Annual Limit</h3>
+              <p>
+                6 Days 5 Nights<br />
+                Up to 50 nights for 10 years to explore multiple destinations, flexibly planned for your family.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Who Benefits Section */}
-      <div className={Classes.section}>
-        <div className={Classes.backgroundImgOverlay}>
-          <img src={backgroundImg2} alt="backgroundImg2" />
-          <div className={Classes.overlayContent}>
-            <h2>Who Benefits the Most from this Package?</h2>
-            <div className={Classes.benefitCards}>
-              <div>
-                <h3>Luxury-Seeking Families</h3>
-                <p>
-                  Stress-free annual vacations with unforgettable memories for the
-                  entire family.
-                </p>
-              </div>
-              <div>
-                <h3>Professionals & Retirees</h3>
-                <p>
-                  Explore the world with peace of mind, enjoying financial and
-                  lifestyle rewards.
-                </p>
-              </div>
-              <div>
-                <h3>Astute Investors</h3>
-                <p>
-                  Earn passive value from travel investments with robust refund
-                  policies and exclusive benefits.
-                </p>
-              </div>
+      <div className={Classes.overlayBgWrap}>
+        <img src={bgImg} alt="Who Benefits" className={Classes.overlayBgImg} />
+        <div className={Classes.overlayContent}>
+          <h2>WHO BENEFITS THE MOST FROM THIS PACKAGE?</h2>
+          <div className={Classes.benefitCardGrid}>
+            <div>
+              <div className={Classes.benefitCardTitle}>LUXURY-SEEKING FAMILIES</div>
+              <p>Stress-free annual vacations with unforgettable memories for the entire family.</p>
+            </div>
+            <div>
+              <div className={Classes.benefitCardTitle}>PROFESSIONALS & RETIREES</div>
+              <p>Explore the world with peace of mind, enjoying financial and lifestyle rewards simultaneously.</p>
+            </div>
+            <div>
+              <div className={Classes.benefitCardTitle}>ASTUTE INVESTORS</div>
+              <p>Earn passive value from travel investments with robust refund policies and exclusive benefits.</p>
             </div>
           </div>
         </div>

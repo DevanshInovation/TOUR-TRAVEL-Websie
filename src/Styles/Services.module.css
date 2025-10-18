@@ -357,3 +357,222 @@
     font-size: 1.2rem;
   }
 }
+
+.heroBannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2.3rem 0;
+  background: #f7f8fa;
+}
+
+.heroBannerBg {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 330px;
+  border-radius: 22px;
+  background: center center/cover no-repeat;
+  box-shadow: 0 14px 50px rgba(20,44,74,0.13);
+  padding: 50px 22px 38px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroLogo {
+  height: 79px;
+  width: auto;
+  margin-bottom: 13px;
+  background: #fff8;
+  border-radius: 19px;
+  box-shadow: 0 4px 16px rgba(255,128,0,0.13);
+}
+
+.heroExplore {
+  color: #ffd7b3;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  text-shadow: 0 2px 14px #23232345;
+  letter-spacing: 2.5px;
+  text-align: center;
+  line-height: 1;
+}
+
+.heroBigTitle {
+  font-size: 3.45rem;
+  color: #fff;
+  font-family: 'Oswald', 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  margin-bottom: 21px;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 22px rgba(0,0,0,0.21);
+  line-height: 1.07;
+  text-align: center;
+}
+
+.heroOutlineBox {
+  color: #fff;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-radius: 37px;
+  border: 2px solid #fff;
+  background: rgba(36,36,36,0.14);
+  padding: 12px 39px 10px 39px;
+  margin-bottom: 14px;
+  letter-spacing: 2.5px;
+  box-shadow: 0 1.5px 11px rgba(255,128,0,0.09);
+  text-align: center;
+}
+
+.heroSubText {
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 1.0;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 14px;
+  text-shadow: 0 2px 16px #2323231c;
+}
+
+@media (max-width: 900px) {
+  .heroBannerBg   { max-width: 99vw; border-radius: 13px; padding: 28px 2vw 28px 2vw;}
+  .heroLogo       { height: 46px; margin-bottom: 8px;}
+  .heroBigTitle   { font-size: 2.13rem; margin-bottom: 11px;}
+  .heroExplore    { font-size: 1.09rem;}
+  .heroOutlineBox { font-size: 0.91rem; padding: 8px 8vw;}
+  .heroSubText    { font-size: 0.97rem;}
+}
+@media (max-width: 600px) {
+  .heroBannerBg   { border-radius: 7px; padding: 14px 1vw 18px 1vw;}
+  .heroLogo       { height: 29px;}
+  .heroBigTitle   { font-size: 1.17rem;}
+  .heroOutlineBox { font-size: 0.73rem; padding: 6px 3vw;}
+  .heroSubText    { font-size: 0.73rem;}
+}
+
+/* End of Services.module.css */
+
+.overlaySection {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 2.6rem auto;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  background: #fff;
+}
+
+.overlayBgWrap {
+  position: relative;
+  width: 100%;
+  min-height: 310px;
+  display: flex;
+  align-items: stretch;
+}
+
+.overlayBgImg {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  object-fit: cover;
+  filter: brightness(67%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 14px;
+}
+
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2.6rem 1.8rem 2.1rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  min-height: 310px;
+  justify-content: center;
+}
+
+.overlayContent h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}
+
+.packageCardGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.packageCardGrid > div {
+  background: rgba(255,255,255,0.17);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.20);
+  border-radius: 10px;
+  padding: 1.25rem 1.18rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 1.5px 13px rgba(0,0,0,0.10);
+  text-align: center;
+  backdrop-filter: blur(2.6px);
+  margin-bottom: 1.5rem;
+  transition: transform 0.24s, box-shadow 0.23s;
+}
+
+.packageCardGrid > div:hover {
+  transform: scale(1.035) translateY(-7px);
+  box-shadow: 0 7px 35px rgba(255,128,0,0.10), 0 1.5px 13px rgba(255,128,0,0.13);
+  border-color: #ffd7b3;
+}
+
+.packageCardGrid h3 {
+  color: #ffd7b3;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  font-size: 1.17rem;
+  text-shadow: 0 2px 8px #23232311;
+}
+
+.packageCardGrid p {
+  color: #fff;
+  font-size: 1.07rem;
+  text-shadow: 0 1.5px 7px rgba(0,0,0,0.10);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .overlaySection, .overlayBgWrap, .overlayContent { max-width: 99vw; border-radius: 10px;}
+  .overlayContent { padding: 2rem 1vw 1.6rem 1vw;}
+  .overlayBgImg { min-height: 148px; }
+}
+
+@media (max-width: 700px) {
+  .packageCardGrid { flex-direction: column; gap: 1.3rem; }
+  .packageCardGrid > div { max-width: 100%; min-width: 0; }
+  .overlayContent { padding: 1.14rem 0.2rem; }
+  .overlayContent h2 { font-size: 1.11rem; }
+  .overlayBgImg, .overlayContent { min-height: 105px; }
+}
+@media (max-width: 600px) {
+  .overlaySection, .overlayBgWrap, .overlayContent { border-radius: 7px;}
+  .packageCardGrid > div { padding: 0.95rem 0.85rem; }
+  .overlayContent h2 { font-size: 1.01rem; }
+  .overlayBgImg, .overlayContent { min-height: 80px; }
+}

@@ -14,7 +14,7 @@ function Testimonials() {
       <div className={Classes.boxContainer}>
         <div className={Classes.testimonialBox}>
           <p>
-            Samim travel has such a user-friendly website. Easy to navigate,
+            CDSPL WORLD has such a user-friendly website. Easy to navigate,
             search and fiddle with dates instead of having to call up. Once
             decided, the booking process was swift and easy, thank you.
           </p>
