@@ -7,7 +7,6 @@ import heroBg from "../assets/yourbg.jpg";
 import Logo from "../assets/logo2.png";
 import bgImg2 from "../assets/benefits-bg.jpg";
 import bgImg1 from "../assets/tpd.jpg";
-import servicesImg from "../assets/services.png";
 import Classes from "../Styles/Services.module.css";
 import experienceImg from "../assets/experience.jpg";
 import exp1 from "../assets/exp1.jpg";
@@ -15,6 +14,13 @@ import exp2 from "../assets/exp2.jpg";
 import exp3 from "../assets/exp3.jpg";
 import bgImg4 from "../assets/returns-bg.jpg";
 import bgImg3 from "../assets/transparency-bg.jpg";
+import imgGuide from "../assets/serviceGuide.png";
+import imgAdmin from "../assets/serviceAdmin.png";
+import imgTransport from "../assets/serviceTransport.png";
+import imgHotel from "../assets/serviceHotel.png";
+import imgMeals from "../assets/serviceMeal.png";
+import imgTicketing from "../assets/serviceTicketing.png";
+
 
 
 function Service() {
@@ -206,22 +212,34 @@ function Service() {
     </div>
 
       {/* Services Section */}
-      <div className={Classes.section}>
-        <h2>Our Services</h2>
-        <img
-          src={servicesImg}
-          alt="Our Services"
-          className={Classes.servicesImg}
-        />
-        {/* <ul className={Classes.serviceList}>
-          <li>Tour Guide</li>
-          <li>Administration</li>
-          <li>Transport</li>
-          <li>Hotel Reservation</li>
-          <li>Meals</li>
-          <li>Ticketing</li>
-        </ul> */}
+      <h2 className={Classes.heading}>OUR SERVICES</h2>
+
+    <div className={Classes.cardGrid}>
+      <div className={Classes.card}>
+        <img src={imgGuide} alt="Tour Guide" />
+        <h3>Tour Guide</h3>
       </div>
+      <div className={Classes.card}>
+        <img src={imgAdmin} alt="Administration" />
+        <h3>Administration</h3>
+      </div>
+      <div className={Classes.card}>
+        <img src={imgTransport} alt="Transport" />
+        <h3>Transport</h3>
+      </div>
+      <div className={Classes.card}>
+        <img src={imgHotel} alt="Hotel Reservation" />
+        <h3>Hotel Reservation</h3>
+      </div>
+      <div className={Classes.card}>
+        <img src={imgMeals} alt="Meals" />
+        <h3>Meals</h3>
+      </div>
+      <div className={Classes.card}>
+        <img src={imgTicketing} alt="Ticketing" />
+        <h3>Ticketing</h3>
+      </div>
+    </div>
     </section>
   );
 }
