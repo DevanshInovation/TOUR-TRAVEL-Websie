@@ -5,7 +5,7 @@ import service3 from "../assets/service3.png";
 import service4 from "../assets/service4.png";
 import heroBg from "../assets/yourbg.jpg";
 import Logo from "../assets/logo2.png";
-import bgImg from "../assets/benefits-bg.jpg";
+import bgImg2 from "../assets/benefits-bg.jpg";
 import bgImg1 from "../assets/tpd.jpg";
 import servicesImg from "../assets/services.png";
 import Classes from "../Styles/Services.module.css";
@@ -13,10 +13,9 @@ import experienceImg from "../assets/experience.jpg";
 import exp1 from "../assets/exp1.jpg";
 import exp2 from "../assets/exp2.jpg";
 import exp3 from "../assets/exp3.jpg";
-import backgroundImg1 from "../assets/backgroundImg1.jpg";
-import backgroundImg2 from "../assets/backgroundImg2.jpg";
-import backgroundImg3 from "../assets/backgroundImg3.jpg";
-import backgroundImg4 from "../assets/backgroundImg4.jpg";
+import bgImg4 from "../assets/returns-bg.jpg";
+import bgImg3 from "../assets/transparency-bg.jpg";
+
 
 function Service() {
   return (
@@ -142,7 +141,7 @@ function Service() {
 
       {/* Who Benefits Section */}
       <div className={Classes.overlayBgWrap}>
-        <img src={bgImg} alt="Who Benefits" className={Classes.overlayBgImg} />
+        <img src={bgImg2} alt="Who Benefits" className={Classes.overlayBgImg} />
         <div className={Classes.overlayContent}>
           <h2>WHO BENEFITS THE MOST FROM THIS PACKAGE?</h2>
           <div className={Classes.benefitCardGrid}>
@@ -164,7 +163,7 @@ function Service() {
 
       {/* Transparency & Reliability */}
        <div className={Classes.overlayBgWrap}>
-      <img src={bgImg} alt="Transparency & Reliability" className={Classes.overlayBgImg} />
+      <img src={bgImg3} alt="Transparency & Reliability" className={Classes.overlayBgImg} />
       <div className={Classes.overlayContent}>
         <h2>TRANSPARENCY, RELIABILITY, AND HASSLE-FREE LUXURY</h2>
         <div className={Classes.transparencyCardGrid}>
@@ -185,37 +184,26 @@ function Service() {
     </div>
 
       {/* Net Returns Section */}
-      <div className={Classes.section}>
-        <div className={Classes.backgroundImgOverlay}>
-          <img src={backgroundImg4} alt="backgroundImg4" />
-          <div className={Classes.overlayContent}>
-            <h2>Your Net Returns: Travel Cost-Free for a Decade</h2>
-            <div className={Classes.returnsCards}>
-              <div>
-                <h3>Free Travel</h3>
-                <p>
-                  Explore global destinations for 10 years without additional
-                  expense on flights or hotels.
-                </p>
-              </div>
-              <div>
-                <h3>Full Investment Return</h3>
-                <p>
-                  Your ₹7,50,000 investment is refunded fully over 10 years, with
-                  automatic yearly payouts.
-                </p>
-              </div>
-              <div>
-                <h3>Experience Value</h3>
-                <p>
-                  Create precious memories for your family worth several lakhs every
-                  year.
-                </p>
-              </div>
-            </div>
+          <div className={Classes.overlayBgWrap}>
+      <img src={bgImg4} alt="Net Returns" className={Classes.overlayBgImg} />
+      <div className={Classes.overlayContent}>
+        <h2>YOUR NET RETURNS: TRAVEL COST-FREE FOR A DECADE</h2>
+        <div className={Classes.returnsCardGrid}>
+          <div>
+            <div className={Classes.returnsCardTitle}>FREE TRAVEL</div>
+            <p>Explore global destinations for 10 years without any additional expense on flights or hotels.</p>
+          </div>
+          <div>
+            <div className={Classes.returnsCardTitle}>FULL INVESTMENT RETURN</div>
+            <p>Your ₹7,50,000 investment is refunded fully over 10 years, with automatic yearly payouts.</p>
+          </div>
+          <div>
+            <div className={Classes.returnsCardTitle}>EXPERIENCE VALUE</div>
+            <p>Create precious memories for your family worth several lakhs every year.</p>
           </div>
         </div>
       </div>
+    </div>
 
       {/* Services Section */}
       <div className={Classes.section}>
