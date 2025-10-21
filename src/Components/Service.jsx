@@ -163,36 +163,26 @@ function Service() {
       </div>
 
       {/* Transparency & Reliability */}
-      <div className={Classes.section}>
-        <div className={Classes.backgroundImgOverlay}>
-          <img src={backgroundImg3} alt="backgroundImg3" />
-          <div className={Classes.overlayContent}>
-            <h2>Transparency, Reliability, and Hassle-Free Luxury</h2>
-            <div className={Classes.transparencyCards}>
-              <div>
-                <h3>One-Time Investment</h3>
-                <p>
-                  No renewals or annual fees. Pure luxury with financial clarity.
-                </p>
-              </div>
-              <div>
-                <h3>Inclusive Service</h3>
-                <p>
-                  Complete travel and accommodation management by our expert
-                  concierge team.
-                </p>
-              </div>
-              <div>
-                <h3>Guaranteed Premium Experience</h3>
-                <p>
-                  Limited availability ensures dedicated, personalized service for
-                  every client.
-                </p>
-              </div>
-            </div>
+       <div className={Classes.overlayBgWrap}>
+      <img src={bgImg} alt="Transparency & Reliability" className={Classes.overlayBgImg} />
+      <div className={Classes.overlayContent}>
+        <h2>TRANSPARENCY, RELIABILITY, AND HASSLE-FREE LUXURY</h2>
+        <div className={Classes.transparencyCardGrid}>
+          <div>
+            <div className={Classes.transparencyCardTitle}>ONE-TIME INVESTMENT</div>
+            <p>No renewals or annual fees. Pure luxury with financial clarity.</p>
+          </div>
+          <div>
+            <div className={Classes.transparencyCardTitle}>INCLUSIVE SERVICE</div>
+            <p>Complete travel and accommodation management by our expert concierge team.</p>
+          </div>
+          <div>
+            <div className={Classes.transparencyCardTitle}>GUARANTEED PREMIUM EXPERIENCE</div>
+            <p>Limited availability ensures dedicated, personalized service for every client.</p>
           </div>
         </div>
       </div>
+    </div>
 
       {/* Net Returns Section */}
       <div className={Classes.section}>

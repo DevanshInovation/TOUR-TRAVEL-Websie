@@ -705,12 +705,124 @@
   .overlayBgImg, .overlayContent { min-height: 75px; }
 }
 
-.packageCardGrid > div {
-  background: rgba(255,255,255,0.17);
-  /* ... */
-}
-.benefitCardGrid > div {
-  background: rgba(30, 30, 30, 0.14);
-  /* Slightly different shadow or border color */
+/* transpanct */
+.overlaySection {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 2.6rem auto;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  background: #fff;
 }
 
+.overlayBgWrap {
+  position: relative;
+  width: 100%;
+  min-height: 310px;
+  display: flex;
+  align-items: stretch;
+}
+
+.overlayBgImg {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  object-fit: cover;
+  filter: brightness(70%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 14px;
+}
+
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2.6rem 1.8rem 2.1rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  min-height: 310px;
+  justify-content: center;
+}
+
+.overlayContent h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.22rem;
+  text-shadow: 0 4px 13px rgba(0,0,0,0.22);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.transparencyCardGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.18rem;
+}
+
+.transparencyCardGrid > div {
+  background: rgba(255,255,255,0.17);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.23);
+  border-radius: 11px;
+  padding: 1.22rem 1.20rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 340px;
+  box-shadow: 0 1.5px 11px rgba(0,0,0,0.11);
+  text-align: center;
+  backdrop-filter: blur(2.8px);
+  margin-bottom: 1.4rem;
+  transition: transform 0.20s, box-shadow 0.20s;
+}
+
+.transparencyCardGrid > div:hover {
+  transform: scale(1.035) translateY(-8px);
+  box-shadow: 0 8px 26px rgba(255,128,0,0.07);
+  border-color: #ffd7b3;
+}
+
+.transparencyCardTitle {
+  font-size: 1.13rem;
+  font-weight: 900;
+  color: #ffeed6;
+  margin-bottom: 0.62rem;
+  padding: 2px 0;
+  letter-spacing: 0.8px;
+  text-shadow: 0 2px 7px #2a230e6c;
+  text-transform: uppercase;
+  border-radius: 7px;
+  display: inline-block;
+  background: rgba(13,13,13,0.16);
+}
+
+.transparencyCardGrid p {
+  color: #fff;
+  font-size: 1.08rem;
+  text-shadow: 0 1.2px 5px rgba(0,0,0,0.13);
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .overlaySection, .overlayBgWrap, .overlayContent { max-width: 99vw; border-radius: 10px;}
+  .overlayContent { padding: 2rem 1vw 1.4rem 1vw;}
+  .overlayBgImg { min-height: 115px; }
+}
+@media (max-width: 700px) {
+  .transparencyCardGrid { flex-direction: column; gap: 1.15rem; }
+  .transparencyCardGrid > div { max-width: 100%; min-width: 0; }
+  .overlayContent { padding: 1.11rem 0.2rem; }
+  .overlayContent h2 { font-size: 1.07rem; }
+  .overlayBgImg, .overlayContent { min-height: 75px; }
+}
