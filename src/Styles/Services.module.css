@@ -1,17 +1,170 @@
-.service {
-  padding: 3rem 0 2rem 0;
+/* =============== 0. ROOT BACKGROUND & SPACING =============== */
+body, .service {
   background: #f7f8fa;
+  margin: 0;
+  padding: 0;
 }
 
+/* =============== 1. HERO / BANNER SECTION =============== */
+.heroBannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3.5rem 0;
+   padding: 2.5rem 1.7rem 2.2rem 1.7rem;
+}
+.heroBannerBg {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 310px;
+  margin: 0 auto;
+  border-radius: 26px;
+  background: center center/cover no-repeat;
+  box-shadow: 0 14px 40px rgba(20,44,74,0.16);
+  padding: 48px 20px 38px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  overflow: hidden;
+}
+.heroLogo {
+  height: 79px;
+  margin-bottom: 13px;
+  border-radius: 19px;
+  box-shadow: 0 4px 16px rgba(255,128,0,0.13);
+}
+.heroExplore { color: #ffd7b3; font-size: 1.8rem; font-weight: 800; margin-bottom: 2px; margin-top: 10px; text-shadow: 0 2px 14px #23232345; letter-spacing: 2.5px; text-align: center;}
+.heroBigTitle { font-size: 3.45rem; color: #fff; font-family: 'Oswald', 'Montserrat', Arial, sans-serif; font-weight: 900; margin-bottom: 21px; letter-spacing: 1px; text-shadow: 0 3px 22px rgba(0,0,0,0.21); text-align: center;}
+.heroOutlineBox { color: #fff; font-size: 1.13rem; font-weight: 700; border-radius: 37px; border: 2px solid #fff; background: rgba(36,36,36,0.14); padding: 12px 39px 10px 39px; margin-bottom: 14px; letter-spacing: 2.5px; box-shadow: 0 1.5px 11px rgba(255,128,0,0.09);}
+.heroSubText { color: #fff; font-size: 1.2rem; letter-spacing: 2px; text-align: center; margin-top: 14px; text-shadow: 0 2px 16px #2323231c;}
+
+/* =============== 2. UNIFORM SECTION CARD (white) =============== */
+.section, .experienceBanner, .servicesSection {
+  max-width: 1100px;
+  margin: 0 auto 3.3rem auto;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 1.7rem 2.2rem 1.7rem;
+}
+.section:last-child, .experienceBanner:last-child, .servicesSection:last-child { margin-bottom: 0 !important; }
+
+/* ============= 3. EXPERIENCE SECTION (17+ YEAR) ============= */
+.experienceBanner { display: flex; gap: 2.5rem; align-items: center; flex-wrap: wrap; }
+.expLeft { flex: 1 1 320px; display: flex; justify-content: center; }
+.expMainImg { width: 100%; max-width: 340px; border-radius: 12px; box-shadow: 0 2px 10px rgba(255, 128, 0, 0.08);}
+.expRight { flex: 2 1 400px; }
+.expRight h2 { color: #ff8000; font-size: 1.5rem; margin-bottom: 0.8rem;}
+.expRight p { color: #444; font-size: 1.05rem; margin-bottom: 1.1rem;}
+.expImagesRow { display: flex; gap: 1rem; margin-top: 1rem;}
+.expImagesRow img { width: 80px; height: 60px; object-fit: cover; border-radius: 8px; box-shadow: 0 1px 6px rgba(255,128,0,0.08); }
+
+/* ============= 4. OVERLAY/GLASS SECTIONS (ALL PACKAGE, BENEFITS, etc) ============= */
+.overlaySection {
+  overflow: visible;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 auto 3.3rem auto;
+  max-width: 1100px;
+  border-radius: 18px;
+}
+.overlayBgWrap {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 4px 25px rgba(20,44,74,0.14);
+  background: #fff;
+}
+.overlayBgImg {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  object-fit: cover;
+  filter: brightness(67%);
+  position: absolute;
+  top: 0; left: 0; z-index: 1; border-radius: 18px;
+}
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2.9rem 2.1rem 2.25rem 2.1rem;
+  color: #fff;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.packageCardGrid, .benefitCardGrid, .transparencyCardGrid, .returnsCardGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.1rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.packageCardGrid > div,
+.benefitCardGrid > div,
+.transparencyCardGrid > div,
+.returnsCardGrid > div {
+  background: rgba(255,255,255,0.21);
+  color: #fff;
+  border: 1.4px solid rgba(255,255,255,0.21);
+  border-radius: 13px;
+  padding: 1.24rem 1.13rem;
+  flex: 1 1 235px;
+  min-width: 220px;
+  max-width: 340px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.11);
+  text-align: center;
+  backdrop-filter: blur(3px);
+  margin-bottom: 1.4rem;
+  transition: transform 0.22s, box-shadow 0.21s;
+}
+.packageCardGrid > div:hover,
+.benefitCardGrid > div:hover,
+.transparencyCardGrid > div:hover,
+.returnsCardGrid > div:hover {
+  transform: scale(1.04) translateY(-10px);
+  box-shadow: 0 7px 37px rgba(255,128,0,0.15), 0 1.5px 11px rgba(255,128,0,0.10);
+  border-color: #ffd7b3;
+}
+.packageCardGrid h3, .benefitCardTitle, .transparencyCardTitle, .returnsCardTitle {
+  color: #ffd7b3;
+  font-size: 1.19rem;
+  font-weight: 900;
+  margin-bottom: 0.66rem;
+  letter-spacing: 0.7px;
+  text-shadow: 0 2px 8px #23232311;
+  text-transform: uppercase;
+  background: rgba(12,12,12,0.17);
+  border-radius: 5px;
+  padding: 3px 0;
+}
+.packageCardGrid p, .benefitCardGrid p, .transparencyCardGrid p, .returnsCardGrid p {
+  color: #fff;
+  font-size: 1.06rem;
+  text-shadow: 0 1.6px 8px rgba(0,0,0,0.13);
+  line-height: 1.45;
+}
+
+/* ============= 5. SIMPLE SERVICES ICON CARD ROW ============= */
 .cardsRow {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem ;
+  margin-bottom: 2.5rem;
 }
-
 .services {
   background: #fff;
   border-radius: 14px;
@@ -25,983 +178,22 @@
   cursor: pointer;
   border: 1px solid #f0f0f0;
 }
-
 .services:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 8px 32px rgba(255, 128, 0, 0.13);
   border-color: #ff8000;
 }
-
-.icon img {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 0.7rem;
-}
-
-.services h3 {
-  color: #ff8000;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.services p {
-  font-size: 0.97rem;
-  color: #444;
-}
-
-.section {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  padding: 2.5rem 1.5rem 2rem 1.5rem;
-  margin-bottom: 2.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section h2 {
-  color: #ff8000;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-.section h3 {
-  color: #222;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.sectionText {
-  text-align: center;
-  color: #333;
-  font-size: 1.07rem;
-  margin-top: 1rem;
-}
-
-.bannerImg {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 12px;
-  margin: 0 auto 1rem auto;
-  display: block;
-  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.06);
-}
-
-.servicesImg {
-  width: 100%;
-  max-width: 480px;
-  border-radius: 10px;
-  margin: 0 auto 1.2rem auto;
-  display: block;
-  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.06);
-}
-
-.experienceBanner {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  padding: 2.5rem 1.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.expLeft {
-  flex: 1 1 320px;
-  display: flex;
-  justify-content: center;
-}
-
-.expMainImg {
-  width: 100%;
-  max-width: 340px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.08);
-}
-
-.expRight {
-  flex: 2 1 400px;
-}
-
-.expRight h2 {
-  color: #ff8000;
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-  text-align: left;
-}
-
-.expRight p {
-  color: #444;
-  font-size: 1.05rem;
-  margin-bottom: 1.1rem;
-}
-
-.expImagesRow {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.expImagesRow img {
-  width: 80px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.08);
-}
-
-/* Overlay background image card styles */
-.backgroundImgOverlay {
-  position: relative;
-  width: 100%;
-  min-height: 340px;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.backgroundImgOverlay img {
-  width: 100%;
-  height: 100%;
-  min-height: 340px;
-  object-fit: cover;
-  filter: brightness(60%);
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.overlayContent {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 2.5rem 1.5rem 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  justify-content: center;
-  min-height: 340px;
-}
-
-.overlayContent h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
-
-.overlayContent .packageCards,
-.overlayContent .benefitCards,
-.overlayContent .transparencyCards,
-.overlayContent .returnsCards {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.2rem;
-  justify-content: center;
-  width: 100%;
-}
-
-.overlayContent .packageCards > div,
-.overlayContent .benefitCards > div,
-.overlayContent .transparencyCards > div,
-.overlayContent .returnsCards > div {
-  background: rgba(255, 255, 255, 0.18);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.1);
-  border-radius: 10px;
-  padding: 1.2rem 1rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 320px;
-  margin-bottom: 1rem;
-  text-align: center;
-  backdrop-filter: blur(2px);
-}
-
-.overlayContent .packageCards > div h3,
-.overlayContent .benefitCards > div h3,
-.overlayContent .transparencyCards > div h3,
-.overlayContent .returnsCards > div h3 {
-  color: #ffd7b3;
-}
-
-.overlayContent .packageCards > div p,
-.overlayContent .benefitCards > div p,
-.overlayContent .transparencyCards > div p,
-.overlayContent .returnsCards > div p {
-  color: #fff;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.13);
-}
-
-.packageCards,
-.benefitCards,
-.transparencyCards,
-.returnsCards {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.2rem;
-  justify-content: center;
-}
-
-.packageCards > div,
-.benefitCards > div,
-.transparencyCards > div,
-.returnsCards > div {
-  background: #f7f8fa;
-  padding: 1.2rem 1rem;
-  border-radius: 10px;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 320px;
-  margin-bottom: 1rem;
-  box-shadow: 0 1px 6px rgba(255, 128, 0, 0.06);
-  border: 1px solid #f0f0f0;
-  text-align: center;
-}
-
-.serviceList {
-  margin-top: 1.2rem;
-  padding-left: 1.5rem;
-  font-size: 1.05rem;
-  color: #444;
-}
-
-.serviceList li {
-  margin-bottom: 0.5rem;
-  list-style: disc;
-}
-
-/* Responsive overlay */
-@media (max-width: 900px) {
-  .experienceBanner {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-  }
-  .expLeft,
-  .expRight {
-    width: 100%;
-    max-width: 100%;
-  }
-  .section,
-  .experienceBanner {
-    padding: 1.5rem 0.5rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .cardsRow,
-  .packageCards,
-  .benefitCards,
-  .transparencyCards,
-  .returnsCards,
-  .overlayContent .packageCards,
-  .overlayContent .benefitCards,
-  .overlayContent .transparencyCards,
-  .overlayContent .returnsCards {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .services,
-  .packageCards > div,
-  .benefitCards > div,
-  .transparencyCards > div,
-  .returnsCards > div,
-  .overlayContent .packageCards > div,
-  .overlayContent .benefitCards > div,
-  .overlayContent .transparencyCards > div,
-  .overlayContent .returnsCards > div {
-    max-width: 100%;
-    min-width: 0;
-  }
-  .expImagesRow {
-    gap: 0.5rem;
-  }
-  .expImagesRow img {
-    width: 60px;
-    height: 45px;
-  }
-  .backgroundImgOverlay,
-  .backgroundImgOverlay img,
-  .overlayContent {
-    min-height: 220px;
-  }
-  .overlayContent {
-    padding: 1.2rem 0.5rem;
-  }
-  .overlayContent h2 {
-    font-size: 1.2rem;
-  }
-}
-
-.heroBannerSection {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 0 2.3rem 0;
-  background: #f7f8fa;
-}
-
-.heroBannerBg {
-  width: 100%;
-  max-width: 1100px;
-  min-height: 330px;
-  border-radius: 22px;
-  background: center center/cover no-repeat;
-  box-shadow: 0 14px 50px rgba(20,44,74,0.13);
-  padding: 50px 22px 38px 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  overflow: hidden;
-}
-
-.heroLogo {
-  height: 79px;
-  width: auto;
-  margin-bottom: 13px;
-  /* background: #fff8; */
-  border-radius: 19px;
-  box-shadow: 0 4px 16px rgba(255,128,0,0.13);
-}
-
-.heroExplore {
-  color: #ffd7b3;
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin-bottom: 2px;
-  margin-top: 10px;
-  text-shadow: 0 2px 14px #23232345;
-  letter-spacing: 2.5px;
-  text-align: center;
-  line-height: 1;
-}
-
-.heroBigTitle {
-  font-size: 3.45rem;
-  color: #fff;
-  font-family: 'Oswald', 'Montserrat', Arial, sans-serif;
-  font-weight: 900;
-  margin-bottom: 21px;
-  letter-spacing: 1px;
-  text-shadow: 0 3px 22px rgba(0,0,0,0.21);
-  line-height: 1.07;
-  text-align: center;
-}
-
-.heroOutlineBox {
-  color: #fff;
-  font-size: 1.13rem;
-  font-weight: 700;
-  border-radius: 37px;
-  border: 2px solid #fff;
-  background: rgba(36,36,36,0.14);
-  padding: 12px 39px 10px 39px;
-  margin-bottom: 14px;
-  letter-spacing: 2.5px;
-  box-shadow: 0 1.5px 11px rgba(255,128,0,0.09);
-  text-align: center;
-}
-
-.heroSubText {
-  color: #fff;
-  font-size: 1.2rem;
-  opacity: 1.0;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-top: 14px;
-  text-shadow: 0 2px 16px #2323231c;
-}
-
-@media (max-width: 900px) {
-  .heroBannerBg   { max-width: 99vw; border-radius: 13px; padding: 28px 2vw 28px 2vw;}
-  .heroLogo       { height: 46px; margin-bottom: 8px;}
-  .heroBigTitle   { font-size: 2.13rem; margin-bottom: 11px;}
-  .heroExplore    { font-size: 1.09rem;}
-  .heroOutlineBox { font-size: 0.91rem; padding: 8px 8vw;}
-  .heroSubText    { font-size: 0.97rem;}
-}
-@media (max-width: 600px) {
-  .heroBannerBg   { border-radius: 7px; padding: 14px 1vw 18px 1vw;}
-  .heroLogo       { height: 29px;}
-  .heroBigTitle   { font-size: 1.17rem;}
-  .heroOutlineBox { font-size: 0.73rem; padding: 6px 3vw;}
-  .heroSubText    { font-size: 0.73rem;}
-}
-
-/* End of Services.module.css */
-
-.overlaySection {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 2.6rem auto;
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  background: #fff;
-}
-
-.overlayBgWrap {
-  position: relative;
-  width: 100%;
-  min-height: 310px;
-  display: flex;
-  align-items: stretch;
-}
-
-.overlayBgImg {
-  width: 100%;
-  height: 100%;
-  min-height: 310px;
-  object-fit: cover;
-  filter: brightness(67%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 14px;
-}
-
-.overlayContent {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 2.6rem 1.8rem 2.1rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  min-height: 310px;
-  justify-content: center;
-}
-
-.overlayContent h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.2rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
-}
-
-.packageCardGrid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.2rem;
-}
-
-.packageCardGrid > div {
-  background: rgba(255,255,255,0.17);
-  color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.20);
-  border-radius: 10px;
-  padding: 1.25rem 1.18rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 320px;
-  box-shadow: 0 1.5px 13px rgba(0,0,0,0.10);
-  text-align: center;
-  backdrop-filter: blur(2.6px);
-  margin-bottom: 1.5rem;
-  transition: transform 0.24s, box-shadow 0.23s;
-}
-
-.packageCardGrid > div:hover {
-  transform: scale(1.035) translateY(-7px);
-  box-shadow: 0 7px 35px rgba(255,128,0,0.10), 0 1.5px 13px rgba(255,128,0,0.13);
-  border-color: #ffd7b3;
-}
-
-.packageCardGrid h3 {
-  color: #ffd7b3;
-  font-weight: 700;
-  margin-bottom: 0.6rem;
-  font-size: 1.17rem;
-  text-shadow: 0 2px 8px #23232311;
-}
-
-.packageCardGrid p {
-  color: #fff;
-  font-size: 1.07rem;
-  text-shadow: 0 1.5px 7px rgba(0,0,0,0.10);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .overlaySection, .overlayBgWrap, .overlayContent { max-width: 99vw; border-radius: 10px;}
-  .overlayContent { padding: 2rem 1vw 1.6rem 1vw;}
-  .overlayBgImg { min-height: 148px; }
-}
-
-@media (max-width: 700px) {
-  .packageCardGrid { flex-direction: column; gap: 1.3rem; }
-  .packageCardGrid > div { max-width: 100%; min-width: 0; }
-  .overlayContent { padding: 1.14rem 0.2rem; }
-  .overlayContent h2 { font-size: 1.11rem; }
-  .overlayBgImg, .overlayContent { min-height: 105px; }
-}
-@media (max-width: 600px) {
-  .overlaySection, .overlayBgWrap, .overlayContent { border-radius: 7px;}
-  .packageCardGrid > div { padding: 0.95rem 0.85rem; }
-  .overlayContent h2 { font-size: 1.01rem; }
-  .overlayBgImg, .overlayContent { min-height: 80px; }
-}
-
-.overlaySection + .overlaySection {
-  margin-top: 2.8rem;
-}
-
-
-.overlaySection {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 2.5rem auto;
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  background: #fff;
-}
-
-.overlayBgWrap {
-  position: relative;
-  width: 100%;
-  min-height: 310px;
-  display: flex;
-  align-items: stretch;
-}
-
-.overlayBgImg {
-  width: 100%;
-  height: 100%;
-  min-height: 310px;
-  object-fit: cover;
-  filter: brightness(67%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 14px;
-}
-
-.overlayContent {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 2.6rem 1.8rem 2rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  min-height: 310px;
-  justify-content: center;
-}
-
-.overlayContent h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 1.2rem;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.21);
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.benefitCardGrid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.2rem;
-}
-
-.benefitCardGrid > div {
-  background: rgba(255,255,255,0.22);
-  color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.23);
-  border-radius: 10px;
-  padding: 1.3rem 1.38rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 340px;
-  box-shadow: 0 1.5px 10px rgba(0,0,0,0.11);
-  text-align: center;
-  backdrop-filter: blur(2.7px);
-  margin-bottom: 1.5rem;
-  transition: transform 0.22s, box-shadow 0.21s;
-}
-
-.benefitCardGrid > div:hover {
-  transform: scale(1.037) translateY(-8px);
-  box-shadow: 0 7px 30px rgba(255,128,0,0.08);
-  border-color: #ffd7b3;
-}
-
-.benefitCardTitle {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: #ffeed6;
-  margin-bottom: 0.67rem;
-  padding: 1px 0;
-  letter-spacing: 0.7px;
-  text-shadow: 0 2px 7px #332c1256;
-  text-transform: uppercase;
-  border-radius: 6px;
-  display: inline-block;
-  background: rgba(16,16,16,0.18);
-}
-
-.benefitCardGrid p {
-  color: #fff;
-  font-size: 1.07rem;
-  text-shadow: 0 1.5px 7px rgba(0,0,0,0.09);
-  line-height: 1.4;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .overlaySection, .overlayBgWrap, .overlayContent { max-width: 99vw; border-radius: 10px;}
-  .overlayContent { padding: 2rem 1vw 1.6rem 1vw;}
-  .overlayBgImg { min-height: 115px; }
-}
-
-@media (max-width: 700px) {
-  .benefitCardGrid { flex-direction: column; gap: 1.3rem; }
-  .benefitCardGrid > div { max-width: 100%; min-width: 0; }
-  .overlayContent { padding: 1.12rem 0.2rem; }
-  .overlayContent h2 { font-size: 1.09rem; }
-  .overlayBgImg, .overlayContent { min-height: 75px; }
-}
-
-/* transpanct */
-.overlaySection {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 2.6rem auto;
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  background: #fff;
-}
-
-.overlayBgWrap {
-  position: relative;
-  width: 100%;
-  min-height: 310px;
-  display: flex;
-  align-items: stretch;
-}
-
-.overlayBgImg {
-  width: 100%;
-  height: 100%;
-  min-height: 310px;
-  object-fit: cover;
-  filter: brightness(70%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 14px;
-}
-
-.overlayContent {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 2.6rem 1.8rem 2.1rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  min-height: 310px;
-  justify-content: center;
-}
-
-.overlayContent h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 1.22rem;
-  text-shadow: 0 4px 13px rgba(0,0,0,0.22);
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-}
-
-.transparencyCardGrid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.18rem;
-}
-
-.transparencyCardGrid > div {
-  background: rgba(255,255,255,0.17);
-  color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.23);
-  border-radius: 11px;
-  padding: 1.22rem 1.20rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 340px;
-  box-shadow: 0 1.5px 11px rgba(0,0,0,0.11);
-  text-align: center;
-  backdrop-filter: blur(2.8px);
-  margin-bottom: 1.4rem;
-  transition: transform 0.20s, box-shadow 0.20s;
-}
-
-.transparencyCardGrid > div:hover {
-  transform: scale(1.035) translateY(-8px);
-  box-shadow: 0 8px 26px rgba(255,128,0,0.07);
-  border-color: #ffd7b3;
-}
-
-.transparencyCardTitle {
-  font-size: 1.13rem;
-  font-weight: 900;
-  color: #ffeed6;
-  margin-bottom: 0.62rem;
-  padding: 2px 0;
-  letter-spacing: 0.8px;
-  text-shadow: 0 2px 7px #2a230e6c;
-  text-transform: uppercase;
-  border-radius: 7px;
-  display: inline-block;
-  background: rgba(13,13,13,0.16);
-}
-
-.transparencyCardGrid p {
-  color: #fff;
-  font-size: 1.08rem;
-  text-shadow: 0 1.2px 5px rgba(0,0,0,0.13);
-  line-height: 1.4;
-}
-
-@media (max-width: 900px) {
-  .overlaySection, .overlayBgWrap, .overlayContent { max-width: 99vw; border-radius: 10px;}
-  .overlayContent { padding: 2rem 1vw 1.4rem 1vw;}
-  .overlayBgImg { min-height: 115px; }
-}
-@media (max-width: 700px) {
-  .transparencyCardGrid { flex-direction: column; gap: 1.15rem; }
-  .transparencyCardGrid > div { max-width: 100%; min-width: 0; }
-  .overlayContent { padding: 1.11rem 0.2rem; }
-  .overlayContent h2 { font-size: 1.07rem; }
-  .overlayBgImg, .overlayContent { min-height: 75px; }
-}
-/* trans end */
-
-.overlaySection {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 2.5rem auto;
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-  background: #fff;
-}
-
-.overlayBgWrap {
-  position: relative;
-  width: 100%;
-  min-height: 310px;
-  display: flex;
-  align-items: stretch;
-}
-
-.overlayBgImg {
-  width: 100%;
-  height: 100%;
-  min-height: 310px;
-  object-fit: cover;
-  filter: brightness(70%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 14px;
-}
-
-.overlayContent {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 2.6rem 1.8rem 2.1rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  min-height: 310px;
-  justify-content: center;
-}
-
-.overlayContent h2 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 1.3rem;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
-}
-
-.returnsCardGrid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.3rem;
-}
-
-.returnsCardGrid > div {
-  background: rgba(255, 255, 255, 0.18);
-  color: #fff;
-  border: 1.5px solid rgba(255, 255, 255, 0.22);
-  border-radius: 10px;
-  padding: 1.28rem 1.22rem;
-  flex: 1 1 220px;
-  min-width: 220px;
-  max-width: 340px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  backdrop-filter: blur(2.7px);
-  margin-bottom: 1.5rem;
-  transition: transform 0.25s, box-shadow 0.24s;
-}
-
-.returnsCardGrid > div:hover {
-  transform: scale(1.037) translateY(-8px);
-  box-shadow: 0 7px 30px rgba(255, 128, 0, 0.08);
-  border-color: #ffd7b3;
-}
-
-.returnsCardTitle {
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #ffeed6;
-  margin-bottom: 0.65rem;
-  padding: 2px 0;
-  letter-spacing: 0.8px;
-  text-shadow: 0 2px 8px #332c1248;
-  text-transform: uppercase;
-  border-radius: 6px;
-  display: inline-block;
-  background: rgba(10, 10, 10, 0.16);
-}
-
-.returnsCardGrid p {
-  font-size: 1.07rem;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  line-height: 1.4;
-}
-
-@media (max-width: 900px) {
-  .overlaySection,
-  .overlayBgWrap,
-  .overlayContent {
-    max-width: 99vw;
-    border-radius: 10px;
-  }
-  .overlayContent {
-    padding: 2rem 1vw 1.6rem 1vw;
-  }
-  .overlayBgImg {
-    min-height: 145px;
-  }
-}
-
-@media (max-width: 700px) {
-  .returnsCardGrid {
-    flex-direction: column;
-    gap: 1.3rem;
-  }
-  .returnsCardGrid > div {
-    max-width: 100%;
-    min-width: 0;
-  }
-  .overlayContent {
-    padding: 1.2rem 0.2rem;
-  }
-  .overlayContent h2 {
-    font-size: 1.12rem;
-  }
-  .overlayBgImg,
-  .overlayContent {
-    min-height: 85px;
-  }
-}
-
-/* Service */
-
-.servicesSection {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 3rem auto;
-  padding: 2rem 1rem 2rem 1rem;
-  border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
-  text-align: center;
-}
-
-.heading {
-  font-size: 2.1rem;
-  font-weight: 900;
-  color: #ff8000;
-  margin-bottom: 2rem;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
+.icon img { width: 54px; height: 54px; margin-bottom: 0.7rem; }
+.services h3 { color: #ff8000; font-size: 1.15rem; margin-bottom: 0.5rem; font-weight: 600;}
+.services p { font-size: 0.97rem; color: #444;}
+
+/* ============== 6. IMAGE CARD GRID "OUR SERVICES" ============== */
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 2rem;
   justify-items: center;
 }
-
 .card {
   position: relative;
   overflow: hidden;
@@ -1010,18 +202,16 @@
   cursor: pointer;
   width: 100%;
   max-width: 340px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  transition: transform 0.25s, box-shadow 0.25s;
 }
-
 .card img {
   width: 100%;
   height: 210px;
   object-fit: cover;
   border-radius: 12px;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.25s, filter 0.25s;
 }
-
 .card h3 {
   position: absolute;
   bottom: 1rem;
@@ -1031,43 +221,238 @@
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.5px;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0,0,0,0.45);
   padding: 0.4rem 1rem;
   border-radius: 8px;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  transition: background 0.25s ease;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  transition: background 0.25s;
 }
-
 .card:hover {
   transform: translateY(-8px) scale(1.025);
-  box-shadow: 0 8px 30px rgba(255, 128, 0, 0.14);
+  box-shadow: 0 8px 30px rgba(255, 128, 0, 0.15);
 }
-
 .card:hover img {
   transform: scale(1.08);
   filter: brightness(85%);
 }
-
 .card:hover h3 {
-  background: rgba(255, 128, 0, 0.85);
+  background: rgba(255,128,0,0.85);
+}
+.heading {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #ff8000;
+  margin-bottom: 2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.11);
 }
 
+/* ============== 7. RESPONSIVE UNIFICATION ============== */
 @media (max-width: 900px) {
-  .cardGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  .heroBannerBg,.overlayBgWrap,.section,.experienceBanner,.servicesSection{max-width:99vw; border-radius:13px;margin-left:10px; margin-right:10px;}
+  .overlayContent { padding:2rem 2vw 1.5rem 2vw;}
+  .overlayBgImg, .overlayBgWrap, .overlayContent { min-height: 180px;}
+  .cardGrid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem;}
+}
+@media (max-width: 700px) {
+  .heroBannerBg, .overlayBgWrap, .section, .experienceBanner, .servicesSection {
+    border-radius:6px; padding:1.1rem 0.3rem!important;margin-left:2px; margin-right:2px;
   }
+  .overlayContent { padding:1.18rem 0.1rem;}
+  .overlayBgImg, .overlayBgWrap, .overlayContent { min-height:105px;}
+  .packageCardGrid, .benefitCardGrid, .transparencyCardGrid, .returnsCardGrid {
+    flex-direction: column; gap: 1.2rem;
+  }
+  .packageCardGrid > div, .benefitCardGrid > div, .transparencyCardGrid > div, .returnsCardGrid > div {
+    max-width:100%;min-width:0;}
+  .cardGrid{grid-template-columns:1fr;gap:1.2rem;}
+  .card img{height:190px;}
+  .heading { font-size: 1.6rem; }
+  .expImagesRow { gap: 0.5rem;}
+  .expImagesRow img { width:60px;height:45px;}
+}
+@media (max-width: 600px) {
+  .heroBannerBg, .overlayBgWrap, .section, .experienceBanner, .servicesSection{border-radius:4px;}
+  .expImagesRow img{width:46px;height:32px;}
 }
 
-@media (max-width: 620px) {
-  .cardGrid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  .card img {
-    height: 190px;
-  }
-  .heading {
-    font-size: 1.6rem;
-  }
+/* ============== 8. ADDITIONAL STYLES IF NEEDED ============== */
+
+/* === Overlay/Background Section Start === */
+/* Use for all: Package, Benefits, Transparency, Returns sections etc. */
+
+.overlaySection {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 3.3rem auto; /* Big gap above/below */
+  border-radius: 22px;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  position: relative;
 }
+
+/* true background container - always with radius, margin */
+.overlayBgWrap {
+  width: 100%;
+  min-height: 335px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 6px 30px rgba(24,48,74,0.13);
+  background: #f7f8fa; /* fallback in case img fails */
+}
+
+/* Full image, never cut, never overflows */
+.overlayBgImg {
+  position: absolute;
+  z-index: 1;
+  top: 0; left: 0; width: 100%; height: 100%;
+  min-height: 335px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(67%);
+  border-radius: 22px;
+}
+
+/* content always inside, buffer from edges, always on top */
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 335px;
+  padding: 3rem 2.1rem 2.2rem 2.1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading style, harmonized */
+.overlayContent h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 18px #23232344;
+  text-transform: uppercase;
+}
+
+/* GRID for overlay cards */
+.packageCardGrid, .benefitCardGrid, .transparencyCardGrid, .returnsCardGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.15rem;
+  margin-top: 1rem;
+}
+.packageCardGrid > div,
+.benefitCardGrid > div,
+.transparencyCardGrid > div,
+.returnsCardGrid > div {
+  background: rgba(255,255,255,0.21);
+  color: #fff;
+  border: 1.6px solid rgba(255,255,255,0.22);
+  border-radius: 13px;
+  padding: 1.22rem 1.17rem;
+  flex: 1 1 240px;
+  min-width: 215px;
+  max-width: 340px;
+  box-shadow: 0 1.7px 12px rgba(20,44,74,0.11);
+  text-align: center;
+  backdrop-filter: blur(3.4px);
+  margin-bottom: 1.7rem;
+  transition: transform 0.23s, box-shadow 0.23s;
+}
+.packageCardGrid > div:hover,
+.benefitCardGrid > div:hover,
+.transparencyCardGrid > div:hover,
+.returnsCardGrid > div:hover {
+  transform: scale(1.045) translateY(-8px);
+  box-shadow: 0 9px 34px rgba(255,128,0,0.13), 0 2px 12px rgba(255,128,0,0.09);
+  border-color: #ffd7b3;
+}
+
+/* Card head + text unified */
+.packageCardGrid h3, .benefitCardTitle, .transparencyCardTitle, .returnsCardTitle {
+  color: #ffd7b3;
+  font-size: 1.21rem;
+  font-weight: 900;
+  margin-bottom: 0.64rem;
+  background: rgba(14,14,14,0.19);
+  border-radius: 6px;
+  padding: 3px 0;
+  text-transform: uppercase;
+  letter-spacing: .83px;
+}
+.packageCardGrid p, .benefitCardGrid p, .transparencyCardGrid p, .returnsCardGrid p {
+  color: #fff;
+  font-size: 1.06rem;
+  text-shadow: 0 1.6px 8px rgba(0,0,0,0.13);
+  line-height: 1.45;
+}
+
+/* Between overlay sections -- big gap */
+.overlaySection + .overlaySection { margin-top: 3.3rem; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1000px) {
+  .overlaySection, .overlayBgWrap { max-width: 99vw; border-radius: 13px;}
+  .overlayContent { padding: 1.8rem 1vw 1.2rem 1vw; }
+  .overlayBgImg, .overlayBgWrap, .overlayContent { min-height: 170px; }
+}
+@media (max-width: 700px) {
+  .overlaySection, .overlayBgWrap { border-radius: 6px; }
+  .overlayContent { padding: 1.11rem 0.1rem;}
+  .overlayBgImg, .overlayBgWrap, .overlayContent { min-height: 90px;}
+  .packageCardGrid, .benefitCardGrid, .transparencyCardGrid, .returnsCardGrid {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .packageCardGrid > div, .benefitCardGrid > div, .transparencyCardGrid > div, .returnsCardGrid > div {
+    max-width: 100%; min-width: 0;
+  }
+  .overlayContent h2 { font-size: 1.1rem;}
+}
+
+/* === Overlay END === */
+  .servicePageWrap {
+  background: #f7f8fa;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Gap for start/end so no section overlaps/floats on white/gray */
+.sectionGap {
+  height: 26px;
+  width: 100%;
+  background: transparent;
+}
+
+/* --- Experience image row --- */
+.expMainFlex { display: flex; gap: 2.5rem; align-items: center; flex-wrap: wrap; }
+.expLeft { flex: 1 1 320px; display: flex; justify-content: center; }
+.expRight { flex: 2 1 400px; }
+.expImagesRow { display: flex; gap: 1rem; margin-top: 1rem;}
+.expThumbWrap { border-radius: 10px; overflow: hidden; box-shadow: 0 1.3px 7px rgba(255,128,0,0.08); border: 2.2px solid #eee; transition: border-color 0.2s,box-shadow 0.2s, transform 0.21s; }
+.expThumbWrap img { width: 80px; height: 60px; object-fit: cover; display: block; border-radius: 8px; transition: filter 0.22s;}
+.expThumbWrap:hover { border-color: #ff8000; box-shadow: 0 4px 18px #ff80006b, 0 1.5px 8px #2222; transform: scale(1.076);}
+.expThumbWrap:hover img { filter:brightness(95%) drop-shadow(0 2px 7px #ffae00); }
+
+/* Text color reference for shadow: same as expTitle or #ff8000 */
+.expTitle { color: #ff8000; font-size: 1.37rem; font-weight: 900; margin-bottom: .7rem;}
+/* Responsive fix */
+@media (max-width: 600px){
+  .expThumbWrap img{width:55px;height:42px;}
+}
+
+/* --- The rest: keep your overlaySection, .section, .cardGrid code same as provided earlier, gaps/margins/rounded/corner uniformity hamesha maintained rahegi --- */
+/* --- Testimonials Box --- */

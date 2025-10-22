@@ -21,60 +21,15 @@ import imgHotel from "../assets/serviceHotel.png";
 import imgMeals from "../assets/serviceMeal.png";
 import imgTicketing from "../assets/serviceTicketing.png";
 
-
-
 function Service() {
   return (
-    <section className={Classes.service}>
-      {/* Service Cards */}
-      <div className={Classes.cardsRow}>
-        <div className={Classes.services}>
-          <div className={Classes.icon}>
-            <img src={service1} alt="Best Prices" />
-          </div>
-          <h3>Get Best Prices</h3>
-          <p>
-            Pay through our application and save thousands while earning amazing
-            rewards.
-          </p>
-        </div>
-        <div className={Classes.services}>
-          <div className={Classes.icon}>
-            <img src={service2} alt="Covid Safe" />
-          </div>
-          <h3>Covid Safe</h3>
-          <p>
-            All our curated hotels follow strict precautions for a covid-safe
-            environment.
-          </p>
-        </div>
-        <div className={Classes.services}>
-          <div className={Classes.icon}>
-            <img src={service3} alt="Flexible Payment" />
-          </div>
-          <h3>Flexible Payment</h3>
-          <p>
-            Enjoy flexible payment options and get rewards on every payment.
-          </p>
-        </div>
-        <div className={Classes.services}>
-          <div className={Classes.icon}>
-            <img src={service4} alt="Find The Best Near You" />
-          </div>
-          <h3>Find The Best Near You</h3>
-          <p>
-            Discover the best hotels and places to visit near you in a single
-            click.
-          </p>
-        </div>
-      </div>
+    <div className={Classes.servicePageWrap}>
+      {/* Add top gap */}
+      <div className={Classes.sectionGap} />
 
-      {/* Best Price Details */}
+      {/* Hero Section */}
       <div className={Classes.heroBannerSection}>
-        <div
-          className={Classes.heroBannerBg}
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className={Classes.heroBannerBg} style={{ backgroundImage: `url(${heroBg})` }}>
           <img src={Logo} alt="CDSPL Logo" className={Classes.heroLogo} />
           <div className={Classes.heroExplore}>EXPLORE</div>
           <div className={Classes.heroBigTitle}>THE WORLD</div>
@@ -87,161 +42,158 @@ function Service() {
         </div>
       </div>
 
-      {/* Company Experience */}
-      <div className={Classes.experienceBanner}>
-        <div className={Classes.expLeft}>
-          <img
-            src={experienceImg}
-            alt="Experience"
-            className={Classes.expMainImg}
-          />
-        </div>
-        <div className={Classes.expRight}>
-          <h2>Chhaya's Ultimate 17+ Year Global Travel Experience</h2>
-          <p>
-            Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt.
-            Ltd., offers special deals on memberships, holiday packages, events,
-            and resorts. With over 17 years of experience, we have escorted
-            lakhs of travellers worldwide, specializing in customized holidays,
-            incentive travel, and venue bookings.
-          </p>
-          <div className={Classes.expImagesRow}>
-            <img src={exp1} alt="Kerala" />
-            <img src={exp2} alt="Delhi" />
-            <img src={exp3} alt="Rajasthan" />
+      {/* Top services row */}
+      <section className={Classes.section}>
+        <div className={Classes.cardsRow}>
+          <div className={Classes.services}>
+            <div className={Classes.icon}><img src={service1} alt="Best Prices" /></div>
+            <h3>Get Best Prices</h3>
+            <p>Pay through our application and save thousands while earning amazing rewards.</p>
+          </div>
+          <div className={Classes.services}>
+            <div className={Classes.icon}><img src={service2} alt="Covid Safe" /></div>
+            <h3>Covid Safe</h3>
+            <p>All our curated hotels follow strict precautions for a covid-safe environment.</p>
+          </div>
+          <div className={Classes.services}>
+            <div className={Classes.icon}><img src={service3} alt="Flexible Payment" /></div>
+            <h3>Flexible Payment</h3>
+            <p>Enjoy flexible payment options and get rewards on every payment.</p>
+          </div>
+          <div className={Classes.services}>
+            <div className={Classes.icon}><img src={service4} alt="Find The Best Near You" /></div>
+            <h3>Find The Best Near You</h3>
+            <p>Discover the best hotels and places to visit near you in a single click.</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Package Details */}
-      <div className={Classes.overlayBgWrap}>
-        <img src={bgImg1} alt="Premium Package" className={Classes.overlayBgImg} />
-        <div className={Classes.overlayContent}>
-          <h2>Comprehensive Premium Travel Package Details</h2>
-          <div className={Classes.packageCardGrid}>
-            <div>
-              <h3>One-Time Payment</h3>
-              <p>
-                6 Days 5 Nights<br />
-                ₹7,50,000 grants you a decade of complete travel access with no additional fees.
-              </p>
-            </div>
-            <div>
-              <h3>Duration & Coverage</h3>
-              <p>
-                6 Days 5 Nights<br />
-                Enjoy 10 years of unlimited travel.<br />
-                Includes 1 male adult, 1 female adult, and 2 children as per policy.
-              </p>
-            </div>
-            <div>
-              <h3>Annual Limit</h3>
-              <p>
-                6 Days 5 Nights<br />
-                Up to 50 nights for 10 years to explore multiple destinations, flexibly planned for your family.
-              </p>
+      {/* Experience Section */}
+      <section className={Classes.section}>
+        <div className={Classes.expMainFlex}>
+          <div className={Classes.expLeft}>
+            <img src={experienceImg} alt="Experience" className={Classes.expMainImg} />
+          </div>
+          <div className={Classes.expRight}>
+            <h2 className={Classes.expTitle}>Chhaya's Ultimate 17+ Year Global Travel Experience</h2>
+            <p>
+              Chhaya Club & Holidays, a unit of Chhaya Development Services Pvt. Ltd., offers special deals on memberships, holiday packages, events, and resorts. With over 17 years of experience, we have escorted lakhs of travellers worldwide, specializing in customized holidays, incentive travel, and venue bookings.
+            </p>
+            <div className={Classes.expImagesRow}>
+              <div className={Classes.expThumbWrap}><img src={exp1} alt="Kerala" /></div>
+              <div className={Classes.expThumbWrap}><img src={exp2} alt="Delhi" /></div>
+              <div className={Classes.expThumbWrap}><img src={exp3} alt="Rajasthan" /></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Who Benefits Section */}
-      <div className={Classes.overlayBgWrap}>
-        <img src={bgImg2} alt="Who Benefits" className={Classes.overlayBgImg} />
-        <div className={Classes.overlayContent}>
-          <h2>WHO BENEFITS THE MOST FROM THIS PACKAGE?</h2>
-          <div className={Classes.benefitCardGrid}>
-            <div>
-              <div className={Classes.benefitCardTitle}>LUXURY-SEEKING FAMILIES</div>
-              <p>Stress-free annual vacations with unforgettable memories for the entire family.</p>
-            </div>
-            <div>
-              <div className={Classes.benefitCardTitle}>PROFESSIONALS & RETIREES</div>
-              <p>Explore the world with peace of mind, enjoying financial and lifestyle rewards simultaneously.</p>
-            </div>
-            <div>
-              <div className={Classes.benefitCardTitle}>ASTUTE INVESTORS</div>
-              <p>Earn passive value from travel investments with robust refund policies and exclusive benefits.</p>
+      {/* Overlay Sections */}
+      <section className={Classes.overlaySection}>
+        <div className={Classes.overlayBgWrap}>
+          <img src={bgImg1} alt="Premium Package" className={Classes.overlayBgImg} />
+          <div className={Classes.overlayContent}>
+            <h2>Comprehensive Premium Travel Package Details</h2>
+            <div className={Classes.packageCardGrid}>
+              <div>
+                <h3>One-Time Payment</h3>
+                <p>6 Days 5 Nights<br />₹7,50,000 grants you a decade of complete travel access with no additional fees.</p>
+              </div>
+              <div>
+                <h3>Duration & Coverage</h3>
+                <p>6 Days 5 Nights<br />Enjoy 10 years of unlimited travel.<br />Includes 1 male adult, 1 female adult, and 2 children as per policy.</p>
+              </div>
+              <div>
+                <h3>Annual Limit</h3>
+                <p>6 Days 5 Nights<br />Up to 50 nights for 10 years to explore multiple destinations, flexibly planned for your family.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className={Classes.overlaySection}>
+        <div className={Classes.overlayBgWrap}>
+          <img src={bgImg2} alt="Who Benefits" className={Classes.overlayBgImg} />
+          <div className={Classes.overlayContent}>
+            <h2>WHO BENEFITS THE MOST FROM THIS PACKAGE?</h2>
+            <div className={Classes.benefitCardGrid}>
+              <div>
+                <div className={Classes.benefitCardTitle}>LUXURY-SEEKING FAMILIES</div>
+                <p>Stress-free annual vacations with unforgettable memories for the entire family.</p>
+              </div>
+              <div>
+                <div className={Classes.benefitCardTitle}>PROFESSIONALS & RETIREES</div>
+                <p>Explore the world with peace of mind, enjoying financial and lifestyle rewards simultaneously.</p>
+              </div>
+              <div>
+                <div className={Classes.benefitCardTitle}>ASTUTE INVESTORS</div>
+                <p>Earn passive value from travel investments with robust refund policies and exclusive benefits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={Classes.overlaySection}>
+        <div className={Classes.overlayBgWrap}>
+          <img src={bgImg3} alt="Transparency & Reliability" className={Classes.overlayBgImg} />
+          <div className={Classes.overlayContent}>
+            <h2>TRANSPARENCY, RELIABILITY, AND HASSLE-FREE LUXURY</h2>
+            <div className={Classes.transparencyCardGrid}>
+              <div>
+                <div className={Classes.transparencyCardTitle}>ONE-TIME INVESTMENT</div>
+                <p>No renewals or annual fees. Pure luxury with financial clarity.</p>
+              </div>
+              <div>
+                <div className={Classes.transparencyCardTitle}>INCLUSIVE SERVICE</div>
+                <p>Complete travel and accommodation management by our expert concierge team.</p>
+              </div>
+              <div>
+                <div className={Classes.transparencyCardTitle}>GUARANTEED PREMIUM EXPERIENCE</div>
+                <p>Limited availability ensures dedicated, personalized service for every client.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={Classes.overlaySection}>
+        <div className={Classes.overlayBgWrap}>
+          <img src={bgImg4} alt="Net Returns" className={Classes.overlayBgImg} />
+          <div className={Classes.overlayContent}>
+            <h2>YOUR NET RETURNS: TRAVEL COST-FREE FOR A DECADE</h2>
+            <div className={Classes.returnsCardGrid}>
+              <div>
+                <div className={Classes.returnsCardTitle}>FREE TRAVEL</div>
+                <p>Explore global destinations for 10 years without any additional expense on flights or hotels.</p>
+              </div>
+              <div>
+                <div className={Classes.returnsCardTitle}>FULL INVESTMENT RETURN</div>
+                <p>Your ₹7,50,000 investment is refunded fully over 10 years, with automatic yearly payouts.</p>
+              </div>
+              <div>
+                <div className={Classes.returnsCardTitle}>EXPERIENCE VALUE</div>
+                <p>Create precious memories for your family worth several lakhs every year.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Transparency & Reliability */}
-       <div className={Classes.overlayBgWrap}>
-      <img src={bgImg3} alt="Transparency & Reliability" className={Classes.overlayBgImg} />
-      <div className={Classes.overlayContent}>
-        <h2>TRANSPARENCY, RELIABILITY, AND HASSLE-FREE LUXURY</h2>
-        <div className={Classes.transparencyCardGrid}>
-          <div>
-            <div className={Classes.transparencyCardTitle}>ONE-TIME INVESTMENT</div>
-            <p>No renewals or annual fees. Pure luxury with financial clarity.</p>
-          </div>
-          <div>
-            <div className={Classes.transparencyCardTitle}>INCLUSIVE SERVICE</div>
-            <p>Complete travel and accommodation management by our expert concierge team.</p>
-          </div>
-          <div>
-            <div className={Classes.transparencyCardTitle}>GUARANTEED PREMIUM EXPERIENCE</div>
-            <p>Limited availability ensures dedicated, personalized service for every client.</p>
-          </div>
+      {/* Services Gallery */}
+      <section className={Classes.section}>
+        <h2 className={Classes.heading}>OUR SERVICES</h2>
+        <div className={Classes.cardGrid}>
+          <div className={Classes.card}><img src={imgGuide} alt="Tour Guide" /><h3>Tour Guide</h3></div>
+          <div className={Classes.card}><img src={imgAdmin} alt="Administration" /><h3>Administration</h3></div>
+          <div className={Classes.card}><img src={imgTransport} alt="Transport" /><h3>Transport</h3></div>
+          <div className={Classes.card}><img src={imgHotel} alt="Hotel Reservation" /><h3>Hotel Reservation</h3></div>
+          <div className={Classes.card}><img src={imgMeals} alt="Meals" /><h3>Meals</h3></div>
+          <div className={Classes.card}><img src={imgTicketing} alt="Ticketing" /><h3>Ticketing</h3></div>
         </div>
-      </div>
+      </section>
+
+      {/* Add bottom gap */}
+      <div className={Classes.sectionGap} />
     </div>
-
-      {/* Net Returns Section */}
-          <div className={Classes.overlayBgWrap}>
-      <img src={bgImg4} alt="Net Returns" className={Classes.overlayBgImg} />
-      <div className={Classes.overlayContent}>
-        <h2>YOUR NET RETURNS: TRAVEL COST-FREE FOR A DECADE</h2>
-        <div className={Classes.returnsCardGrid}>
-          <div>
-            <div className={Classes.returnsCardTitle}>FREE TRAVEL</div>
-            <p>Explore global destinations for 10 years without any additional expense on flights or hotels.</p>
-          </div>
-          <div>
-            <div className={Classes.returnsCardTitle}>FULL INVESTMENT RETURN</div>
-            <p>Your ₹7,50,000 investment is refunded fully over 10 years, with automatic yearly payouts.</p>
-          </div>
-          <div>
-            <div className={Classes.returnsCardTitle}>EXPERIENCE VALUE</div>
-            <p>Create precious memories for your family worth several lakhs every year.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      {/* Services Section */}
-      <h2 className={Classes.heading}>OUR SERVICES</h2>
-
-    <div className={Classes.cardGrid}>
-      <div className={Classes.card}>
-        <img src={imgGuide} alt="Tour Guide" />
-        <h3>Tour Guide</h3>
-      </div>
-      <div className={Classes.card}>
-        <img src={imgAdmin} alt="Administration" />
-        <h3>Administration</h3>
-      </div>
-      <div className={Classes.card}>
-        <img src={imgTransport} alt="Transport" />
-        <h3>Transport</h3>
-      </div>
-      <div className={Classes.card}>
-        <img src={imgHotel} alt="Hotel Reservation" />
-        <h3>Hotel Reservation</h3>
-      </div>
-      <div className={Classes.card}>
-        <img src={imgMeals} alt="Meals" />
-        <h3>Meals</h3>
-      </div>
-      <div className={Classes.card}>
-        <img src={imgTicketing} alt="Ticketing" />
-        <h3>Ticketing</h3>
-      </div>
-    </div>
-    </section>
   );
 }
-
 export default Service;
