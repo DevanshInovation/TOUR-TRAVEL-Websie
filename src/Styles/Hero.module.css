@@ -1,277 +1,21 @@
-/* ...existing code... */
-
 .heroContainer {
   width: 100%;
-  height: 100%;
-  position: relative;
-  margin-top: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.heroimage {
-  height: 100%;
-}
-
-.heroimage img {
-  width: 100%;
-  filter: brightness(60%);
-  display: block;
-}
-
-.content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-
-.title {
-  width: 60%;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title h1 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  padding: 0 3vw;
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  font-weight: 700;
-}
-
-.nickName {
-  color: rgb(255, 136, 0);
-}
-
-.title p {
-  padding: 0 3vw;
-  text-align: center;
-  font-size: 1rem;
-  margin: 0;
-  max-width: 600px;
-}
-
-.bookingContainer {
-  display: flex;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  justify-content: center;
-  background-color: #fff;
-  align-items: center;
-  gap: 1.5rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-}
-
-.bookingContainer .search {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1.3rem;
-  align-items: flex-start;
-}
-
-.bookingContainer label {
-  text-align: left;
-  font-size: 1rem;
-  color: rgb(28, 32, 88);
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-}
-
-.bookingContainer input {
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem 0.7rem;
-  border-radius: 3px;
-  background: #f5f5f5;
-  margin-bottom: 0.2rem;
-}
-
-.bookingContainer input:focus {
-  outline: 2px solid rgb(243, 111, 9);
-}
-
-.bookingContainer input::placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.7;
-}
-
-.bookingContainer button {
-  padding: 0.7rem 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: rgb(243, 111, 9);
-  border-radius: 5px;
-  color: #fff;
-  border: 1px solid rgb(243, 111, 9);
-  outline: none;
-  transition: color 0.2s, background 0.2s;
-  cursor: pointer;
-}
-
-.bookingContainer button:hover {
-  background-color: transparent;
-  color: rgb(243, 111, 9);
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .title {
-    width: 80%;
-  }
-  .title h1 {
-    font-size: 2rem;
-  }
-  .bookingContainer {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  .bookingContainer .search {
-    width: 100%;
-    padding: 0;
-    align-items: stretch;
-  }
-}
-
-@media (max-width: 600px) {
-  .title {
-    width: 95%;
-  }
-  .title h1 {
-    font-size: 1.3rem;
-    padding: 0 1vw;
-  }
-  .title p {
-    font-size: 0.9rem;
-    padding: 0 1vw;
-  }
-}
-
-.heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 3.5rem;
+  margin-bottom: 2.7rem;
   background: transparent;
   padding-bottom: 2.2rem;
 }
 
-/* Banner + logo wrap */
-.heroimageWrap {
-  position: relative;
-  width: 100%;
-  max-width: 1400px;
-  height: 400px;              /* adjust based on your image */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: 22px;
-  overflow: hidden;
-}
-
-/* Banner image */
-.heroimage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-/* Centered logo over top part of banner, not huge */
-.overlayLogo {
-  position: absolute;
-  top: 32px;           /* adjust up/down as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  height: 120px;       /* nice size on desktop */
-  width: auto;
-  background: rgba(255,255,255,0.07);
-  border-radius: 18px;
-  box-shadow: 0 6px 26px #23232324, 0 1.3px 8px #ffae0090;
-  padding: 0;
-  z-index: 2;
-}
-@media (max-width: 900px) {
-  .heroimageWrap { height: 220px; border-radius: 16px;}
-  .overlayLogo { height: 70px; top: 13px; border-radius: 12px;}
-}
-@media (max-width: 600px) {
-  .content { padding: 0 6vw;}
-  .overlayLogo { height: 47px; top: 2px;}
-}
-
-/* Content always below hero image (padding-top keeps it off the logo) */
-.content {
-  position: relative;
-  width: 100%;
-  max-width: 670px;
-  margin: -50px auto 0 auto;
-  background: transparent;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1.3rem;
-}
-.title h1 {
-  font-size: 2.7rem;
-  color: #fff;
-  font-weight: 800;
-  text-align: center;
-  text-shadow: 0 8px 32px #2227, 0 2px 9px #0003;
-}
-.nickName { color: #ff8000; }
-.title p { color: #fff; text-align: center; font-size: 1.13rem; text-shadow: 0 2px 8px #2224;}
-.bookingContainer {
-  margin-top: 1.3rem;
-  display: flex;
-  gap: 1.1rem;
-  align-items: center;
-  background: #fff;
-  border-radius: 11px;
-  box-shadow: 0 4px 12px #23232313;
-  padding: 0.97rem 1.7rem;
-}
-.bookingContainer label { font-weight: 600; color: #232323; margin-bottom: 0.1rem; display:block;}
-.bookingContainer input[type="text"] {
-  margin-left: 0; margin-top: 0.25rem; font-size: 1.03rem; border: 1.2px solid #eee; border-radius: 8px; padding: 8px 18px 8px 10px; }
-.bookingContainer button {
-  background: #ff8000; color: #fff; font-weight: 700; border: 0; border-radius: 7px; padding: 9px 33px; font-size: 1.08rem; cursor:pointer; box-shadow:0 2px 8px #ffc26a34; transition:background .18s;}
-.bookingContainer button:hover { background: #ffae00;}
-
-
-.heroContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2.7rem;
-}
-
-/* Main banner area with absolute logo+content
-   -- similar to your SS#2, with overlap allowed */
+/* Main banner area with absolute logo and content */
 .heroBannerOuter {
   position: relative;
   width: 100%;
   max-width: 1400px;
-  height: 440px;            /* or 390-450px as fits your image best */
+  height: 440px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -291,33 +35,33 @@
   border-radius: 27px;
 }
 
-/* LOGO: absolutely center top on banner image */
+/* Centered logo absolutely on banner */
 .bannerLogo {
   position: absolute;
-  top: 32px;                   /* adjust up/down as fits your ss */
+  top: 32px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   height: 115px;
   width: auto;
-  /* background: rgba(255,255,255,0.07); */
-  /* border-radius: 17px; */
   padding: 0;
-  /* box-shadow: 0 1.6px 17px #2317, 0 2px 8px #ff800099; */
 }
 
+/* Content overlays banner from lower part */
 .heroContentBlock {
   position: absolute;
-  left: 0; right: 0;
-  bottom: 0;                    /* from bottom of banner */
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 3;
-  background: rgba(255,255,255,0.08);
-  padding: 36px 0 44px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba(255,255,255,0.08);
+  padding: 36px 0 44px 0;
 }
+
 .heroContentBlock h1 {
   font-size: 2.8rem;
   color: #fff;
@@ -335,7 +79,7 @@
   margin-bottom: 1.3rem;
 }
 
-/* Booking block as in SS2 */
+/* Booking block */
 .bookingContainer {
   margin: 0 auto;
   display: flex;
@@ -346,20 +90,68 @@
   box-shadow: 0 4px 12px #23232313;
   padding: 0.97rem 1.7rem;
 }
-.bookingContainer label { font-weight: 600; color: #232323; margin-bottom: 0.1rem; display:block;}
-.bookingContainer input[type="text"] {margin-left: 0; margin-top: 0.25rem; font-size: 1.03rem; border: 1.2px solid #eee; border-radius: 8px; padding: 8px 18px 8px 10px;}
-.bookingContainer button {background: #ff8000; color: #fff; font-weight: 700; border: 0; border-radius: 7px; padding: 9px 33px; font-size: 1.08rem; cursor:pointer; box-shadow:0 2px 8px #ffc26a34; transition:background .18s;}
-.bookingContainer button:hover {background: #ffae00;}
+.bookingContainer label {
+  font-weight: 600;
+  color: #232323;
+  margin-bottom: 0.1rem;
+  display: block;
+}
+.bookingContainer input[type="text"] {
+  margin-left: 0;
+  margin-top: 0.25rem;
+  font-size: 1.03rem;
+  border: 1.2px solid #eee;
+  border-radius: 8px;
+  padding: 8px 18px 8px 10px;
+}
+.bookingContainer button {
+  background: #ff8000;
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  border-radius: 7px;
+  padding: 9px 33px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #ffc26a34;
+  transition: background .18s;
+}
+.bookingContainer button:hover {
+  background: #ffae00;
+}
 
+.bookingContainer .search {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.3rem;
+  align-items: flex-start;
+}
+
+/* Responsive adjustments for all common handsets */
+@media (max-width: 1100px) {
+  .heroBannerOuter { height: 340px;}
+  .bannerLogo { height: 86px; top:20px;}
+}
 @media (max-width: 900px) {
-  .heroBannerOuter {height: 220px; border-radius: 18px;}
-  .heroBgImg { border-radius: 18px; }
-  .bannerLogo {height: 54px; top: 10px;}
-  .heroContentBlock {padding: 23px 0 20px 0;}
+  .heroBannerOuter { height: 220px; border-radius: 18px;}
+  .heroBgImg { border-radius: 18px;}
+  .bannerLogo { height: 54px; top: 10px;}
+  .heroContentBlock { padding: 23px 0 20px 0;}
+  .heroContentBlock h1 { font-size: 1.6rem;}
 }
 @media (max-width: 700px) {
-  .heroBannerOuter{height: 130px;}
-  .bannerLogo{height:32px;top:1px;}
-  .heroContentBlock h1 {font-size:1.18rem;}
-  .bookingContainer {display:block;padding:7px 4vw;}
+  .heroBannerOuter { height: 180px;}
+  .bannerLogo { height: 34px; top:5px;}
+  .heroContentBlock h1 { font-size: 1rem;}
+  .bookingContainer { display: block; padding: 7px 4vw;}
+}
+@media (max-width: 500px) {
+  .heroBannerOuter { height: 130px;}
+  .bannerLogo { height: 21px; top:2px;}
+  .heroContentBlock { padding: 2px 0 8px 0;}
+  .heroContentBlock h1 { font-size: 0.74rem;}
+}
+@media (max-width: 400px) {
+  .heroBannerOuter { height: 88px;}
+  .bannerLogo { height: 14px; top:1px;}
 }

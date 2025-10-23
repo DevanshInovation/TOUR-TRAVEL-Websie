@@ -20,7 +20,19 @@ function Footer() {
               chhayaholidaysinfo@gmail.com
             </a>
             <br />
-            Phone: <a href="tel:0522-4321718">0522-4321718</a>
+            Phone: 
+    <span className={styles.phoneGroup}>
+      <span className={styles.phoneIcon}><i className="fas fa-phone-alt"></i></span>
+      <a href="tel:0522-4321718">0522-4321718</a>
+    </span>
+    <br />
+    <span className={styles.phoneGroup}>
+      <span className={styles.phoneIcon}><i className="fas fa-mobile-alt"></i></span>
+      <a href="tel:+918090754036">+91-8090754036</a> / 
+      <a href="tel:+918090754037">+91-8090754037</a> / 
+      <a href="tel:+918090754038">+91-8090754038</a> / 
+      <a href="tel:+918090754039">+91-8090754039</a>
+    </span>
           </p>
         </div>
         {/* Quick Links */}
@@ -72,6 +84,16 @@ function Footer() {
             >
               <i className={`fab fa-instagram ${styles.icon}`}></i>
             </a>
+
+            <a
+              href="https://wa.me/919876543210" // yahan apna WhatsApp number dalen (country code ke saath, bina "+" ke)
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <i className={`fab fa-whatsapp ${styles.icon}`}></i>
+            </a>
+
             {/* <a
               href="https://youtube.com"
               target="_blank"
