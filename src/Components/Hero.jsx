@@ -1,31 +1,46 @@
 import React from "react";
-
+import Slider from "react-slick";
 import Classes from "../Styles/Hero.module.css";
-import Banner from "../assets/hero.png";
 import Logo from "../assets/logo2.png";
 
+import slider1 from "../assets/slider1.jpg";
+import slider2 from "../assets/slider2.jpg";
+import slider3 from "../assets/slider3.jpg";
+import slider4 from "../assets/slider4.jpg";
 
-function Hero() {
+const images = [slider1, slider2, slider3, slider4];
+
+const HeroSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 950,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3400,
+    arrows: false,
+    pauseOnHover: false
+  };
+
   return (
-    <section className={Classes.heroContainer}>
-
-        {/* Banner outer container */}
-      <div className={Classes.heroBannerOuter}>
-        {/* Banner background img */}
-        <img src={Banner} alt="" className={Classes.heroBgImg} />
-
-        {/* Centered logo absolutely on banner */}
+    <div className={Classes.heroSliderWrapper}>
+      <Slider {...settings}>
+        {images.map((img, i) => (
+          <div key={i} className={Classes.sliderImgWrap}>
+            <img src={img} alt={`slide-${i + 1}`} className={Classes.heroBgImg} />
+          </div>
+        ))}
+      </Slider>
+      <div className={Classes.heroOverlayContent}>
         <img src={Logo} alt="CDSPL Logo" className={Classes.bannerLogo} />
-
-        {/* Content block overlays banner from lower part */}
         <div className={Classes.heroContentBlock}>
           <h1>
             Travel & Explore With{" "}
             <span className={Classes.nickName}>CDSPL WORLD</span>
           </h1>
           <p>
-            Save at least 15% on stays worldwide, from relaxing retreats to
-            off-grid adventures
+            Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures
           </p>
           <div className={Classes.bookingContainer}>
             <div className={Classes.search}>
@@ -36,8 +51,8 @@ function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
-export default Hero;
+export default HeroSlider;

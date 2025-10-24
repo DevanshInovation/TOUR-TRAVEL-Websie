@@ -1,85 +1,89 @@
-.heroContainer {
+html,
+body {
+  padding: 0;
+  margin: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin-top: 3.5rem;
-  margin-bottom: 2.7rem;
-  background: transparent;
-  padding-bottom: 2.2rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: #f8fafd;
 }
 
-/* Main banner area with absolute logo and content */
-.heroBannerOuter {
+.heroSliderWrapper {
   position: relative;
   width: 100%;
-  max-width: 1400px;
-  height: 440px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  border-radius: 27px;
+  height: 430px;
   overflow: hidden;
-  background: #eee;
-  margin: 0 auto;
-  box-shadow: 0 14px 40px #2222;
+  margin-bottom: 0;
+}
+
+.sliderImgWrap {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
 }
 
 .heroBgImg {
   width: 100%;
-  height: 100%;
+  height: 430px;
   object-fit: cover;
-  object-position: center center;
+  object-position: center;
   display: block;
-  border-radius: 27px;
 }
 
-/* Centered logo absolutely on banner */
-.bannerLogo {
+.heroOverlayContent {
   position: absolute;
-  top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  height: 115px;
-  width: auto;
-  padding: 0;
-}
-
-/* Content overlays banner from lower part */
-.heroContentBlock {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
+  top: 0; left: 0; right: 0; bottom: 0;
   width: 100%;
+  height: 430px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255,255,255,0.08);
-  padding: 36px 0 44px 0;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.bannerLogo {
+  height: 85px;
+  width: auto;
+  margin-bottom: 1.2rem;
+  margin-top: 15px;
+  z-index: 10;
+  pointer-events: auto;
+  display: block;
+}
+
+.heroContentBlock {
+  width: 95vw;
+  max-width: 680px;
+  min-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(13,27,45,0.22);
+  border-radius: 21px;
+  padding: 22px 12px 18px 12px;
+  z-index: 10;
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroContentBlock h1 {
-  font-size: 2.8rem;
-  color: #fff;
+  font-size: 2rem;
   font-weight: 800;
-  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5rem;
   text-shadow: 0 8px 32px #2228, 0 2px 9px #0005;
-  margin-bottom: 0.7rem;
+  line-height: 2.5rem;
 }
 .nickName { color: #ff8000; }
 .heroContentBlock p {
   color: #fff;
-  text-align: center;
-  font-size: 1.13rem;
+  font-size: 1.04rem;
+  margin-bottom: 1rem;
   text-shadow: 0 2px 8px #2227;
-  margin-bottom: 1.3rem;
 }
-
-/* Booking block */
 .bookingContainer {
   margin: 0 auto;
   display: flex;
@@ -88,70 +92,58 @@
   background: #fff;
   border-radius: 11px;
   box-shadow: 0 4px 12px #23232313;
-  padding: 0.97rem 1.7rem;
+  padding: 0.85rem 1.0rem;
+  pointer-events: auto;
+  max-width: 400px;
 }
 .bookingContainer label {
   font-weight: 600;
   color: #232323;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.12rem;
   display: block;
+  font-size: 1.02rem;
 }
 .bookingContainer input[type="text"] {
-  margin-left: 0;
-  margin-top: 0.25rem;
-  font-size: 1.03rem;
-  border: 1.2px solid #eee;
+  margin-left: 0; margin-top: 0.22rem;
+  font-size: 1.01rem; border: 1.2px solid #eee;
   border-radius: 8px;
-  padding: 8px 18px 8px 10px;
+  padding: 8px 14px 8px 8px;
+  width: 150px;
+  max-width: 40vw;
 }
 .bookingContainer button {
-  background: #ff8000;
-  color: #fff;
-  font-weight: 700;
-  border: 0;
-  border-radius: 7px;
-  padding: 9px 33px;
-  font-size: 1.08rem;
-  cursor: pointer;
-  box-shadow: 0 2px 8px #ffc26a34;
-  transition: background .18s;
+  background: #ff8000; color: #fff; font-weight: 700;
+  border: 0; border-radius: 7px; padding: 8px 24px;
+  font-size: 1.01rem; cursor:pointer;
+  box-shadow:0 2px 8px #ffc26a34; transition:background .18s;
 }
-.bookingContainer button:hover {
-  background: #ffae00;
-}
+.bookingContainer button:hover { background: #ffae00; }
 
-.bookingContainer .search {
-  display: flex;
-  flex-direction: column;
-  padding: 0 1.3rem;
-  align-items: flex-start;
-}
 
-/* Responsive adjustments for all common handsets */
-@media (max-width: 1100px) {
-  .heroBannerOuter { height: 340px;}
-  .bannerLogo { height: 86px; top:20px;}
-}
+/* Responsive */
 @media (max-width: 900px) {
-  .heroBannerOuter { height: 220px; border-radius: 18px;}
-  .heroBgImg { border-radius: 18px;}
-  .bannerLogo { height: 54px; top: 10px;}
-  .heroContentBlock { padding: 23px 0 20px 0;}
-  .heroContentBlock h1 { font-size: 1.6rem;}
+  .heroSliderWrapper, .sliderImgWrap, .heroBgImg, .heroOverlayContent {
+    height: 250px;
+  }
+  .bannerLogo { height: 45px; margin-top: 4px;}
+  .heroContentBlock h1 { font-size: 1.1rem; line-height: 24px;}
 }
 @media (max-width: 700px) {
-  .heroBannerOuter { height: 180px;}
-  .bannerLogo { height: 34px; top:5px;}
-  .heroContentBlock h1 { font-size: 1rem;}
-  .bookingContainer { display: block; padding: 7px 4vw;}
+  .heroSliderWrapper, .sliderImgWrap, .heroBgImg, .heroOverlayContent {
+    height: 120px;
+  }
+  .bannerLogo { height: 21px; margin-top: 2px;}
+  .heroContentBlock { border-radius: 9px; font-size: 0.83rem; padding: 7px 3vw;}
+  .heroContentBlock h1 { font-size: 0.72rem; line-height: 14px;}
+  .bookingContainer { flex-direction: column; padding: 6px 2vw; max-width: 96vw;}
+  .bookingContainer input[type="text"] { width: 80vw; }
+  .bookingContainer button { width: 82vw; margin-top: 6px;}
 }
-@media (max-width: 500px) {
-  .heroBannerOuter { height: 130px;}
-  .bannerLogo { height: 21px; top:2px;}
-  .heroContentBlock { padding: 2px 0 8px 0;}
-  .heroContentBlock h1 { font-size: 0.74rem;}
-}
-@media (max-width: 400px) {
-  .heroBannerOuter { height: 88px;}
-  .bannerLogo { height: 14px; top:1px;}
+
+@media (max-width: 480px) {
+  .heroSliderWrapper, .sliderImgWrap, .heroBgImg, .heroOverlayContent {
+    height: 72px;
+  }
+  .bannerLogo { height: 12px; margin-top: 1px;}
+  .heroContentBlock h1 { font-size: 0.47rem; line-height: 8px;}
 }
