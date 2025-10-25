@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import Classes from "../Styles/Hero.module.css";
 import Logo from "../assets/logo2.png";
@@ -11,6 +11,8 @@ import slider4 from "../assets/slider4.jpg";
 const images = [slider1, slider2, slider3, slider4];
 
 const HeroSlider = () => {
+  const [location, setLocation] = useState("");
+
   const settings = {
     dots: true,
     infinite: true,
@@ -20,7 +22,17 @@ const HeroSlider = () => {
     autoplay: true,
     autoplaySpeed: 3400,
     arrows: false,
-    pauseOnHover: false
+    pauseOnHover: false,
+  };
+
+  const handleSubmit = () => {
+    const msg = encodeURIComponent(
+      location
+        ? `Hi, I want to book a holiday trip to ${location}. Please provide more details.`
+        : "Hi, I want to book a holiday trip. Please provide more details."
+    );
+    // here change your mobile number as you get whatsapp on that number
+    window.open(`https://wa.me/+919999999999?text=${msg}`, "_blank");
   };
 
   return (
@@ -28,7 +40,11 @@ const HeroSlider = () => {
       <Slider {...settings}>
         {images.map((img, i) => (
           <div key={i} className={Classes.sliderImgWrap}>
-            <img src={img} alt={`slide-${i + 1}`} className={Classes.heroBgImg} />
+            <img
+              src={img}
+              alt={`slide-${i + 1}`}
+              className={Classes.heroBgImg}
+            />
           </div>
         ))}
       </Slider>
@@ -40,14 +56,20 @@ const HeroSlider = () => {
             <span className={Classes.nickName}>CDSPL WORLD</span>
           </h1>
           <p>
-            Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures
+            Save at least 15% on stays worldwide, from relaxing retreats to
+            off-grid adventures
           </p>
           <div className={Classes.bookingContainer}>
             <div className={Classes.search}>
               <label>Where you want to go</label>
-              <input type="text" placeholder="search your location" />
+              <input
+                type="text"
+                placeholder="search your location"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+              />
             </div>
-            <button>BOOK NOW</button>
+            <button onClick={handleSubmit}>BOOK NOW</button>
           </div>
         </div>
       </div>
