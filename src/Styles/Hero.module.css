@@ -163,15 +163,19 @@ body {
   .sliderImgWrap,
   .heroBgImg,
   .heroOverlayContent {
-    height: 250px;
+    height: 340px;
+    min-height: 240px;
   }
   .bannerLogo {
-    height: 45px;
-    margin-top: 4px;
+    height: 44px;
+    margin-top: 6px;
   }
   .heroContentBlock h1 {
-    font-size: 1.1rem;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .heroContentBlock p {
+    font-size: 1rem;
   }
 }
 
@@ -180,32 +184,66 @@ body {
   .sliderImgWrap,
   .heroBgImg,
   .heroOverlayContent {
-    height: 120px;
+    height: 240px;
+    min-height: 200px;
   }
   .bannerLogo {
-    height: 21px;
+    height: 26px;
     margin-top: 2px;
   }
+  .heroOverlayContent {
+    background: none !important; /* Remove blurry/gradient overlay */
+  }
   .heroContentBlock {
-    border-radius: 9px;
-    font-size: 0.83rem;
-    padding: 7px 3vw;
+    border-radius: 8px;
+    font-size: 0.97rem;
+    padding: 6px 2vw;
+    max-width: 98vw;
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
   }
   .heroContentBlock h1 {
-    font-size: 0.72rem;
-    line-height: 14px;
+    font-size: 0.95rem;
+    line-height: 1.1rem;
+    color: #222;
+    text-shadow: none;
+  }
+  .heroContentBlock p {
+    font-size: 0.8rem;
+    color: #333;
+    text-shadow: none;
   }
   .bookingContainer {
-    flex-direction: column;
-    padding: 6px 2vw;
-    max-width: 96vw;
+    flex-direction: row;
+    padding: 4px 2vw;
+    max-width: 95vw;
+    gap: 0.4rem;
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+  .bookingContainer label {
+    font-size: 0.85rem;
+    color: #007f7f;
+    margin-bottom: 0;
   }
   .bookingContainer input[type="text"] {
-    width: 80vw;
+    width: 90px;
+    font-size: 0.85rem;
+    padding: 4px 7px;
+    max-width: 90px;
+    min-width: 60px;
+    border-radius: 5px;
   }
   .bookingContainer button {
-    width: 82vw;
-    margin-top: 6px;
+    width: 60px;
+    max-width: 60px;
+    font-size: 0.85rem;
+    padding: 4px 0;
+    margin-top: 0;
+    border-radius: 5px;
   }
 }
 
@@ -214,14 +252,65 @@ body {
   .sliderImgWrap,
   .heroBgImg,
   .heroOverlayContent {
-    height: 72px;
+    height: 170px;
+    min-height: 140px;
   }
   .bannerLogo {
-    height: 12px;
+    height: 16px;
     margin-top: 1px;
   }
+  .heroOverlayContent {
+    background: none !important; /* Remove blurry/gradient overlay */
+  }
+  .heroContentBlock {
+    border-radius: 6px;
+    font-size: 0.8rem;
+    padding: 3px 1vw;
+    max-width: 99vw;
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
   .heroContentBlock h1 {
-    font-size: 0.47rem;
-    line-height: 8px;
+    font-size: 0.7rem;
+    line-height: 0.95rem;
+    color: #222;
+    text-shadow: none;
+  }
+  .heroContentBlock p {
+    font-size: 0.65rem;
+    color: #333;
+    text-shadow: none;
+  }
+  .bookingContainer {
+    flex-direction: row;
+    padding: 2px 1vw;
+    max-width: 99vw;
+    gap: 0.3rem;
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+  .bookingContainer label {
+    font-size: 0.7rem;
+    color: #007f7f;
+    margin-bottom: 0;
+  }
+  .bookingContainer input[type="text"] {
+    width: 60px;
+    font-size: 0.7rem;
+    padding: 3px 5px;
+    max-width: 60px;
+    min-width: 40px;
+    border-radius: 4px;
+  }
+  .bookingContainer button {
+    width: 45px;
+    max-width: 45px;
+    font-size: 0.7rem;
+    padding: 3px 0;
+    margin-top: 0;
+    border-radius: 4px;
   }
 }
