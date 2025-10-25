@@ -20,7 +20,14 @@ function InquiryForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle the form submission (API call, etc.)
+
+    const msg = encodeURIComponent(
+      `Inquiry Details:\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nDestination: ${form.destination}\nTravelers: ${form.travelers}\nStart Date: ${form.startDate}\nEnd Date: ${form.endDate}\nMessage: ${form.message}`
+    );
+
+    // Replace with your WhatsApp number
+    window.open(`https://wa.me/+919999999999?text=${msg}`, "_blank");
+
     setSubmitted(true);
   };
 
