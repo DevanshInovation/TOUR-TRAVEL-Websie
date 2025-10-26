@@ -256,7 +256,7 @@ function Recommendation() {
       `Hi, I'm interested in booking a trip to ${destination}. Please provide more details.`
     );
     // here change your mobile number as you get whatsapp on that number
-    window.open(`https://wa.me/+919999999999?text=${msg}`, "_blank");
+    window.open(`https://wa.me/+918090754040?text=${msg}`, "_blank");
   };
 
   return (

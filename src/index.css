@@ -9,6 +9,12 @@ html {
 }
 
 body {
-  margin: 1rem 2rem;
+  margin: 2rem 0rem 0rem 0rem;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }

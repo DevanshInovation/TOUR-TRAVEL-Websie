@@ -101,7 +101,7 @@ body,
 }
 
 /* ============= 3. EXPERIENCE SECTION ============= */
-.experienceBanner {
+.expMainFlex {
   display: flex;
   gap: 2.5rem;
   align-items: center;
@@ -116,15 +116,16 @@ body,
   width: 100%;
   max-width: 340px;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 188, 212, 0.1);
+  box-shadow: 0 2px 10px rgba(255, 128, 0, 0.08);
 }
 .expRight {
   flex: 2 1 400px;
 }
-.expRight h2 {
+.expTitle {
   color: #00bcd4;
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.37rem;
+  font-weight: 900;
+  margin-bottom: 0.7rem;
 }
 .expRight p {
   color: #444;
@@ -136,12 +137,27 @@ body,
   gap: 1rem;
   margin-top: 1rem;
 }
-.expImagesRow img {
+.expThumbWrap {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1.3px 7px rgba(255,128,0,0.08);
+  border: 2.2px solid #eee;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.21s;
+}
+.expThumbWrap img {
   width: 80px;
   height: 60px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 1px 6px rgba(0, 188, 212, 0.15);
+  transition: filter 0.22s;
+}
+.expThumbWrap:hover {
+  border-color: #00bcd4;
+  box-shadow: 0 4px 18px #00bcd46b, 0 1.5px 8px #2222;
+  transform: scale(1.076);
+}
+.expThumbWrap:hover img {
+  filter: brightness(95%) drop-shadow(0 2px 7px #ffae00);
 }
 
 /* ============= 4. OVERLAY/GLASS SECTIONS ============= */
@@ -356,91 +372,26 @@ body,
 }
 
 /* ============== 7. RESPONSIVE UNIFICATION ============== */
-@media (max-width: 900px) {
-  .heroBannerBg,
-  .overlayBgWrap,
-  .section,
-  .experienceBanner,
-  .servicesSection {
-    max-width: 99vw;
-    border-radius: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .overlayContent {
-    padding: 2rem 2vw 1.5rem 2vw;
-  }
-  .overlayBgImg,
-  .overlayBgWrap,
-  .overlayContent {
-    min-height: 180px;
-  }
-  .cardGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
+@media (max-width: 1000px) {
+  .heroBannerBg, .overlayBgWrap { max-width: 99vw; border-radius: 13px; }
+  .overlayContent { padding: 2.2rem 1.5rem 2rem; }
+  .cardsRow { gap: 1.5rem; justify-content: center; }
+  .cardGrid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 }
 @media (max-width: 700px) {
-  .heroBannerBg,
-  .overlayBgWrap,
-  .section,
-  .experienceBanner,
-  .servicesSection {
-    border-radius: 6px;
-    padding: 1.1rem 0.3rem !important;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-  .overlayContent {
-    padding: 1.18rem 0.1rem;
-  }
-  .overlayBgImg,
-  .overlayBgWrap,
-  .overlayContent {
-    min-height: 105px;
-  }
-  .packageCardGrid,
-  .benefitCardGrid,
-  .transparencyCardGrid,
-  .returnsCardGrid {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-  .packageCardGrid > div,
-  .benefitCardGrid > div,
-  .transparencyCardGrid > div,
-  .returnsCardGrid > div {
-    max-width: 100%;
-    min-width: 0;
-  }
-  .cardGrid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-  .card img {
-    height: 190px;
-  }
-  .heading {
-    font-size: 1.6rem;
-  }
-  .expImagesRow {
-    gap: 0.5rem;
-  }
-  .expImagesRow img {
-    width: 60px;
-    height: 45px;
-  }
+  .heroBannerBg, .overlayBgWrap { border-radius: 6px; padding:1.1rem 0.3rem!important; }
+  .cardsRow { flex-direction: column; gap: 1.2rem; }
+  .cardGrid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .heroBigTitle { font-size: 2.25rem; }
+  .heroExplore { font-size: 1.4rem; }
+  .heroSubText { font-size: 1rem; }
+  .expMainFlex { flex-direction: column; gap: 1.5rem; }
+  .expLeft, .expRight { flex: 1 1 100%; }
 }
-@media (max-width: 600px) {
-  .heroBannerBg,
-  .overlayBgWrap,
-  .section,
-  .experienceBanner,
-  .servicesSection {
-    border-radius: 4px;
-  }
-  .expImagesRow img {
-    width: 46px;
-    height: 32px;
-  }
+@media (max-width: 480px) {
+  .heroBigTitle { font-size: 1.85rem; }
+  .heroExplore { font-size: 1.2rem; }
+  .heroSubText { font-size: 0.95rem; }
+  .expTitle { font-size: 1.15rem; }
+  .services { padding: 1.5rem 1rem; }
 }
