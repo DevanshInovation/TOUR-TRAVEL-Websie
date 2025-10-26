@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { FiMenu, FiX } from "react-icons/fi";
 import Classes from "../Styles/NavBar.module.css";
 
 function NavBar() {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Helper to set active class based on current path
   const isActive = (path) => (location.pathname === path ? Classes.active : "");
 
   const handleInquireClick = () => {
     navigate("/inquire");
+    setMenuOpen(false);
   };
 
   return (
@@ -22,24 +23,40 @@ function NavBar() {
         </h1>
       </div>
 
-      <ul>
-        <li className={isActive("/")}>
+      {/* Hamburger icon (mobile) */}
+      <div
+        className={Classes.hamburger}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <FiX /> : <FiMenu />}
+      </div>
+
+      {/* Menu links */}
+      <ul className={`${Classes.navLinks} ${menuOpen ? Classes.open : ""}`}>
+        <li className={isActive("/")} onClick={() => setMenuOpen(false)}>
           <Link to="/">Home</Link>
         </li>
-        <li className={isActive("/services")}>
+        <li
+          className={isActive("/services")}
+          onClick={() => setMenuOpen(false)}
+        >
           <Link to="/services">Services</Link>
         </li>
-        <li className={isActive("/places")}>
+        <li className={isActive("/places")} onClick={() => setMenuOpen(false)}>
           <Link to="/places">Places</Link>
         </li>
-        <li className={isActive("/testimonials")}>
+        <li
+          className={isActive("/testimonials")}
+          onClick={() => setMenuOpen(false)}
+        >
           <Link to="/testimonials">Testimonials</Link>
         </li>
+        <li>
+          <button className={Classes.NavBtn} onClick={handleInquireClick}>
+            INQUIRE NOW
+          </button>
+        </li>
       </ul>
-
-      <button className={Classes.NavBtn} onClick={handleInquireClick}>
-        INQUIRE NOW
-      </button>
     </nav>
   );
 }

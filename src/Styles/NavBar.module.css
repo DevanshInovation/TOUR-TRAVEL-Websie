@@ -24,7 +24,6 @@
   display: flex;
   align-items: center;
 }
-
 .NavLogo span {
   background: linear-gradient(90deg, #00e1ff, #00bfa6);
   -webkit-background-clip: text;
@@ -35,6 +34,21 @@
   letter-spacing: 2px;
 }
 
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.navLinks li {
+  list-style: none;
+}
+.navLinks a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .active {
   color: #00bfbf;
   border-bottom: 2.5px solid #00bfbf;
@@ -43,96 +57,60 @@
   transition: background 0.2s, border-bottom 0.2s;
 }
 
-.Navbar ul {
-  display: flex;
-  gap: 2.2rem;
-  text-transform: uppercase;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.Navbar ul li {
-  font-size: 1rem;
-  list-style: none;
-  cursor: pointer;
-  transition: color 0.18s, background 0.18s;
-  font-weight: 600;
-  padding: 0.3rem 0.7rem;
-  border-radius: 3px;
-  position: relative;
-}
-
-.Navbar ul li a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.18s;
-}
-
-.Navbar ul li:hover,
-.Navbar ul li:focus-within {
-  color: #00bfbf;
-  background: rgba(0, 191, 191, 0.07);
-}
-
 .NavBtn {
-  padding: 0.55rem 1.5rem;
-  border-radius: 5px;
-  border: none;
-  background: linear-gradient(90deg, #00e1ff, #00bfa6);
+  padding: 0.6rem 1.4rem;
+  background: #00bfbf;
   color: #fff;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-size: 1.08rem;
-  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
   font-weight: 700;
-  box-shadow: 0 3px 10px rgba(0, 191, 191, 0.25);
-  letter-spacing: 1.2px;
-  margin-left: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.NavBtn:hover {
+  background: #fff;
+  color: #00bfbf;
+  border: 1.5px solid #00bfbf;
 }
 
-.NavBtn:hover,
-.NavBtn:focus {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 191, 191, 0.35);
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
+/* ------------------- RESPONSIVE ------------------- */
 @media (max-width: 900px) {
-  .Navbar {
-    padding: 0.7rem 1rem;
+  .hamburger {
+    display: block;
+    color: #00bfbf
   }
-  .NavLogo {
-    font-size: 1.4rem;
-  }
-  .Navbar ul {
-    gap: 1.2rem;
-  }
-  .NavBtn {
-    font-size: 0.98rem;
-    padding: 0.5rem 1.1rem;
-    margin-left: 0.7rem;
-  }
-}
 
-@media (max-width: 600px) {
-  .Navbar {
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0.6rem 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 191, 191, 0.13);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
   }
-  .NavLogo {
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
+
+  .open {
+    height: auto;
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(243, 111, 9, 0.1);
   }
-  .Navbar ul {
-    gap: 0.7rem;
-    font-size: 0.95rem;
-  }
+
+  .navLinks li,
   .NavBtn {
-    font-size: 0.93rem;
-    padding: 0.45rem 0.8rem;
-    margin-left: 0.3rem;
-    margin-top: 0.5rem;
+    width: 100%;
   }
 }
