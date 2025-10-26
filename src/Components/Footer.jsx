@@ -16,8 +16,8 @@ function Footer() {
             India
             <br />
             Email:{" "}
-            <a href="mailto:chhayaholidaysinfo@gmail.com">
-              chhayaholidaysinfo@gmail.com
+            <a href="mailto:cdsplworld@gmail.com">
+              cdsplworld@gmail.com
             </a>
             <br />
             Phone: 
