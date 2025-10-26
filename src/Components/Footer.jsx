@@ -86,7 +86,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://wa.me/919876543210" // yahan apna WhatsApp number dalen (country code ke saath, bina "+" ke)
+              href="https://wa.me/918090754040" // yahan apna WhatsApp number dalen (country code ke saath, bina "+" ke)
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

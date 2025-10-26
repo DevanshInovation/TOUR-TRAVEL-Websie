@@ -26,7 +26,7 @@ function InquiryForm() {
     );
 
     // Replace with your WhatsApp number
-    window.open(`https://wa.me/+919999999999?text=${msg}`, "_blank");
+    window.open(`https://wa.me/+918090754040?text=${msg}`, "_blank");
 
     setSubmitted(true);
   };
