@@ -26,6 +26,41 @@ import Switzerland from "../assets/Switzerland.jpg";
 import Tokyo from "../assets/Tokyo.jpg";
 import Udaipur from "../assets/Udaipur.jpg";
 import Varanasi from "../assets/Varanasi.jpg";
+import Badrinath from "../assets/Badrinath.jpg";
+import Dwarka from "../assets/Dwarka.jpg";
+import Puri from "../assets/Puri.jpg";
+import Rameswaram from "../assets/Rameswaram.jpg";
+import Somnath from "../assets/Somnath.jpg";
+import Mallikarjuna from "../assets/Mallikarjuna.jpg";
+import Mahakaleshwar from "../assets/Mahakaleshwar.jpg";
+import Omkareshwar from "../assets/Omkareshwar.jpg";
+import Kedarnath from "../assets/Kedarnath.jpg";
+import Bhimashankar from "../assets/Bhimashankar.jpg";
+import KashiVishwanath from "../assets/Kashi Vishwanath.jpg";
+import Trimbakeshwar from "../assets/Trimbakeshwar.jpg";
+import Baidyanath from "../assets/Baidyanath.jpg";
+import Nageshwar from "../assets/Nageshwar.jpg";
+import RameshwaramJyotirling from "../assets/Rameshwaram Jyotirling.jpg";
+import Grishneshwar from "../assets/Grishneshwar.webp";
+import Kamakhya from "../assets/Kamakhya Temple.jpg";
+import Kanyakumari from "../assets/Kanyakumari Temple.jpg";
+import Vaishno from "../assets/Vaishno Devi.jpg";
+import Jwalamukhi from "../assets/Jwalamukhi.jpg";
+import Kalighat from "../assets/Kalighat.jpg";
+import Hinglaj from "../assets/Hinglaj.webp";
+import Vindhyavasini from "../assets/Vindhyavasini.webp";
+import Tarapith from "../assets/Tarapith.webp";
+import Amarnath from "../assets/Amarnath Cave.webp";
+import Bhadrakali from "../assets/Bhadrakali.webp";
+import Meenakshi from "../assets/Meenakshi.webp";
+import Chamundeshwari from "../assets/Chamundeshwari.webp";
+import Kalika from "../assets/Kalika Devi.webp";
+import Sharada from "../assets/Sharada Peeth.webp";
+import Bhramaramba from "../assets/Bhramaramba.webp";
+import Mahalakshmi from "../assets/Mahalakshmi.webp";
+import Kanyakubja from "../assets/Kanyakubja.webp";
+import Manasa from "../assets/Manasa Devi.webp";
+import Bhubaneshwari from "../assets/Bhubaneshwari.webp";
 
 function Recommendation() {
   const [active, setActive] = useState(0);
@@ -265,7 +300,7 @@ function Recommendation() {
     },
     // 🛕 4 Dham (Spiritual)
     {
-      image: Varanasi,
+      image: Badrinath,
       title: "Badrinath",
       subTitle:
         "Badrinath, dedicated to Lord Vishnu, one of the Char Dhams in Uttarakhand.",
@@ -275,7 +310,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Dwarka,
       title: "Dwarka",
       subTitle:
         "Dwarka, Gujarat — sacred city of Lord Krishna, part of Char Dham.",
@@ -285,7 +320,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Puri,
       title: "Puri",
       subTitle:
         "Puri, Odisha — home to Lord Jagannath Temple and part of Char Dham.",
@@ -295,7 +330,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Rameswaram,
       title: "Rameswaram",
       subTitle:
         "Rameswaram, Tamil Nadu — island temple town dedicated to Lord Shiva.",
@@ -307,7 +342,7 @@ function Recommendation() {
 
     // 🔱 12 Jyotirlingas (Spiritual)
     {
-      image: Varanasi,
+      image: Somnath,
       title: "Somnath",
       subTitle:
         "Somnath, Gujarat — the first among the 12 Jyotirlingas of Lord Shiva.",
@@ -317,7 +352,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Mallikarjuna,
       title: "Mallikarjuna",
       subTitle:
         "Mallikarjuna, Srisailam — a major Jyotirlinga on the Krishna River.",
@@ -327,7 +362,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Mahakaleshwar,
       title: "Mahakaleshwar",
       subTitle:
         "Mahakaleshwar, Ujjain — famous temple of Lord Shiva, Jyotirlinga in Madhya Pradesh.",
@@ -337,7 +372,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Omkareshwar,
       title: "Omkareshwar",
       subTitle:
         "Omkareshwar, on Narmada River island, one of the 12 Jyotirlingas.",
@@ -347,7 +382,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Kedarnath,
       title: "Kedarnath",
       subTitle:
         "Kedarnath, Uttarakhand — high-altitude temple dedicated to Lord Shiva.",
@@ -357,7 +392,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Bhimashankar,
       title: "Bhimashankar",
       subTitle:
         "Bhimashankar, Maharashtra — temple in Sahyadri hills, Jyotirlinga of Lord Shiva.",
@@ -367,7 +402,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: KashiVishwanath,
       title: "Kashi Vishwanath",
       subTitle:
         "Kashi Vishwanath, Varanasi — one of the holiest Shiva temples in India.",
@@ -377,7 +412,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Trimbakeshwar,
       title: "Trimbakeshwar",
       subTitle:
         "Trimbakeshwar, Nashik — sacred Jyotirlinga located near Godavari River.",
@@ -387,7 +422,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Baidyanath,
       title: "Baidyanath",
       subTitle:
         "Baidyanath, Deoghar — known as Baba Dham, one of the 12 Jyotirlingas.",
@@ -397,7 +432,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Nageshwar,
       title: "Nageshwar",
       subTitle:
         "Nageshwar, near Dwarka — one of the oldest Jyotirlinga shrines.",
@@ -407,7 +442,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: RameshwaramJyotirling,
       title: "Rameshwaram Jyotirling",
       subTitle:
         "Rameshwaram — sacred Jyotirlinga located in Tamil Nadu, linked to Ramayana.",
@@ -417,7 +452,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Grishneshwar,
       title: "Grishneshwar",
       subTitle:
         "Grishneshwar, near Ellora — last among the 12 Jyotirlingas of Shiva.",
@@ -429,7 +464,7 @@ function Recommendation() {
 
     // 🕉️ 18 Shakti Peeth (Spiritual)
     {
-      image: Varanasi,
+      image: Kamakhya,
       title: "Kamakhya Temple",
       subTitle:
         "Kamakhya Temple, Assam — one of the most revered Shakti Peethas of Goddess Shakti.",
@@ -439,7 +474,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Kanyakumari,
       title: "Kanyakumari Temple",
       subTitle: "Kanyakumari, Tamil Nadu — where Goddess Parvati meditated.",
       cost: "15,000",
@@ -448,7 +483,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Vaishno,
       title: "Vaishno Devi",
       subTitle:
         "Vaishno Devi, Jammu — major pilgrimage in Trikuta Hills dedicated to Goddess Durga.",
@@ -458,7 +493,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Jwalamukhi,
       title: "Jwalamukhi Temple",
       subTitle: "Jwalamukhi, Himachal — temple of the flaming mouth Goddess.",
       cost: "9,700",
@@ -467,7 +502,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Kalighat,
       title: "Kalighat Temple",
       subTitle:
         "Kalighat, Kolkata — one of the 51 Shakti Peethas of Goddess Kali.",
@@ -477,7 +512,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Hinglaj,
       title: "Hinglaj Mata",
       subTitle:
         "Hinglaj Mata, Balochistan — ancient Shakti Peeth located in Hingol National Park.",
@@ -487,7 +522,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Vindhyavasini,
       title: "Vindhyavasini Devi",
       subTitle: "Vindhyachal, UP — sacred seat of Goddess Durga.",
       cost: "9,400",
@@ -496,7 +531,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Tarapith,
       title: "Tarapith Temple",
       subTitle: "Tarapith, West Bengal — famous Shakti Peeth of Goddess Tara.",
       cost: "10,500",
@@ -505,7 +540,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Amarnath,
       title: "Amarnath Cave Temple",
       subTitle: "Amarnath, Jammu & Kashmir — sacred cave shrine of Lord Shiva.",
       cost: "15,300",
@@ -514,7 +549,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Bhadrakali,
       title: "Bhadrakali Temple",
       subTitle: "Bhadrakali, Haryana — one of the ancient Shakti Peeths.",
       cost: "8,800",
@@ -523,7 +558,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Meenakshi,
       title: "Meenakshi Temple",
       subTitle:
         "Madurai — architectural marvel and major Shakti Peeth of Goddess Parvati.",
@@ -533,7 +568,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Chamundeshwari,
       title: "Chamundeshwari Temple",
       subTitle:
         "Mysuru, Karnataka — temple dedicated to Goddess Durga atop Chamundi Hills.",
@@ -543,7 +578,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Kalika,
       title: "Kalika Devi Temple",
       subTitle:
         "Ratnagiri, Maharashtra — one of the ancient Shakti Peeths on western coast.",
@@ -553,7 +588,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Sharada,
       title: "Sharada Peeth",
       subTitle:
         "Sharada Peeth, Kashmir — ancient learning center and Shakti temple.",
@@ -563,7 +598,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Bhramaramba,
       title: "Bhramaramba Devi",
       subTitle:
         "Srisailam, Andhra Pradesh — Shakti Peeth paired with Mallikarjuna Jyotirlinga.",
@@ -573,7 +608,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Mahalakshmi,
       title: "Mahalakshmi Temple",
       subTitle:
         "Kolhapur — one of the sacred Shakti Peeths of Goddess Lakshmi.",
@@ -583,7 +618,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Kanyakubja,
       title: "Kanyakubja Peeth",
       subTitle: "Kannauj, UP — ancient Shakti Peeth mentioned in Hindu texts.",
       cost: "9,800",
@@ -592,7 +627,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Manasa,
       title: "Manasa Devi Temple",
       subTitle:
         "Haridwar, Uttarakhand — one of the most visited Shakti Peeth temples.",
@@ -602,7 +637,7 @@ function Recommendation() {
       category: "Spiritual",
     },
     {
-      image: Varanasi,
+      image: Bhubaneshwari,
       title: "Bhubaneshwari Temple",
       subTitle:
         "Odisha — dedicated to Goddess Bhuvaneshwari, part of 18 Maha Peeths.",
