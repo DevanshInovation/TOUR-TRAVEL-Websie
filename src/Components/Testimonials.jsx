@@ -98,7 +98,7 @@ function Testimonials() {
           </p>
           <div className={Classes.info}>
             <div>
-              <h3>Ramesh Babu</h3>
+              <h3>Ramesh</h3>
               <span>Retired Teacher • Chennai</span>
             </div>
           </div>
