@@ -1,10 +1,5 @@
 import React from "react";
-
 import Classes from "../Styles/Testimonials.module.css";
-
-import avatar from "../assets/avatar.jpg";
-import avatar2 from "../assets/avatar2.jpg";
-import avatar3 from "../assets/avatar3.jpg";
 
 function Testimonials() {
   return (
@@ -14,48 +9,111 @@ function Testimonials() {
       <div className={Classes.boxContainer}>
         <div className={Classes.testimonialBox}>
           <p>
-            CDSPL WORLD has such a user-friendly website. Easy to navigate,
-            search and fiddle with dates instead of having to call up. Once
-            decided, the booking process was swift and easy, thank you.
+            I planned my first Goa trip using CDSPL WORLD and honestly, it was
+            smooth AF. Flights, hotel, even scooter rentals were sorted. Zero
+            stress, full vibes 😎.
           </p>
-
           <div className={Classes.info}>
-            <img src={avatar} alt="image" />
             <div>
-              <h3>Rahi Ahmed</h3>
-              <span>CEO • webtechbyrahi channel</span>
+              <h3>Arjun Mehta</h3>
+              <span>Student • Mumbai</span>
             </div>
           </div>
         </div>
 
         <div className={Classes.testimonialBox}>
           <p>
-            Great communication. This was a rushed booking and she was very
-            helpful/prompt with calls/replies to ensure we could have preferred
-            dates.
+            The booking process was so simple my dad actually did it himself.
+            That’s saying *a lot*. Great UI, fast confirmations, loved the
+            service!
           </p>
-
           <div className={Classes.info}>
-            <img src={avatar2} alt="image" />
             <div>
-              <h3>Anthony Tony</h3>
-              <span>Researcher • wikipedia.com</span>
+              <h3>Sneha Iyer</h3>
+              <span>UX Designer • Bangalore</span>
             </div>
           </div>
         </div>
 
         <div className={Classes.testimonialBox}>
           <p>
-            I must say the service we received from this company was amazing and
-            would recommend them to anyone to trust and use them the rewards you
-            get with your holidays are just fantastic.
+            Needed a quick weekend trip from Delhi. Found great deals here.
+            Support team was helpful when I had to reschedule. Worth every
+            rupee.
           </p>
-
           <div className={Classes.info}>
-            <img src={avatar3} alt="image" />
             <div>
-              <h3>John Lee</h3>
-              <span>CEO • Grand Thornton</span>
+              <h3>Rohit Chauhan</h3>
+              <span>Sales Executive • Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={Classes.testimonialBox}>
+          <p>
+            I used to call agents for bookings but now I only use this site. The
+            reward points actually make sense. Great discounts for regular
+            travelers.
+          </p>
+          <div className={Classes.info}>
+            <div>
+              <h3>Priya Kapoor</h3>
+              <span>Entrepreneur • Indore</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={Classes.testimonialBox}>
+          <p>
+            My wife and I booked a Kashmir tour — breathtaking views, perfect
+            stay, and no hidden charges. I’m impressed with the transparency.
+          </p>
+          <div className={Classes.info}>
+            <div>
+              <h3>Vivek Agrawal</h3>
+              <span>Chartered Accountant • Jaipur</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={Classes.testimonialBox}>
+          <p>
+            Decent service overall. Some hotels were unavailable, but their
+            support team instantly found alternatives. Feels like they care
+            about customers.
+          </p>
+          <div className={Classes.info}>
+            <div>
+              <h3>Anonymous</h3>
+              <span>Government Employee • Lucknow</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={Classes.testimonialBox}>
+          <p>
+            I’m 60 and not into “online stuff”, but my daughter showed me this
+            site. Booked our temple trip easily. No scams, no stress. Thank you
+            beta ji 🙏.
+          </p>
+          <div className={Classes.info}>
+            <div>
+              <h3>Ramesh Babu</h3>
+              <span>Retired Teacher • Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={Classes.testimonialBox}>
+          <p>
+            For my honeymoon in Bali, CDSPL WORLD gave a better deal than
+            MakeMyTrip. The itinerary was tight and fun. 10/10 from this happy
+            husband!
+          </p>
+          <div className={Classes.info}>
+            <div>
+              <h3>Aditya & Meera</h3>
+              <span>Newlyweds • Hyderabad</span>
             </div>
           </div>
         </div>

@@ -31,13 +31,15 @@ function Recommendation() {
   const [active, setActive] = useState(0);
 
   const data = [
+    // 🌍 International - Luxury / City / Modern
     {
       image: Destination1,
       title: "Singapore",
-      subTitle: "Singapore, officialy thr Republic of Singapore, is a",
+      subTitle: "Singapore, officially the Republic of Singapore, is a",
       cost: "38,800",
       duration: "Approx 2 night trip",
       type: "International",
+      category: "Luxury",
     },
     {
       image: Destination2,
@@ -46,6 +48,7 @@ function Recommendation() {
       cost: "54,200",
       duration: "Approx 2 night trip",
       type: "International",
+      category: "Beach",
     },
     {
       image: Goa,
@@ -54,6 +57,7 @@ function Recommendation() {
       cost: "12,000",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Beach",
     },
     {
       image: Manali,
@@ -62,6 +66,7 @@ function Recommendation() {
       cost: "10,500",
       duration: "Approx 3 night trip",
       type: "Domestic",
+      category: "Nature",
     },
     {
       image: Jaipur,
@@ -71,6 +76,7 @@ function Recommendation() {
       cost: "9,800",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Cultural",
     },
     {
       image: Destination3,
@@ -79,6 +85,7 @@ function Recommendation() {
       cost: "45,500",
       duration: "Approx 2 night trip",
       type: "International",
+      category: "Luxury",
     },
     {
       image: Destination4,
@@ -87,6 +94,7 @@ function Recommendation() {
       cost: "24,100",
       duration: "Approx 1 night trip",
       type: "International",
+      category: "Nature",
     },
     {
       image: Destination5,
@@ -95,6 +103,7 @@ function Recommendation() {
       cost: "95,400",
       duration: "Approx 2 night 2 day trip",
       type: "International",
+      category: "Beach",
     },
     {
       image: Destination6,
@@ -103,6 +112,7 @@ function Recommendation() {
       cost: "38,800",
       duration: "Approx 3 night 2 day trip",
       type: "International",
+      category: "Luxury",
     },
     {
       image: Dubai,
@@ -112,6 +122,7 @@ function Recommendation() {
       cost: "42,300",
       duration: "Approx 3 night trip",
       type: "International",
+      category: "Luxury",
     },
     {
       image: Mumbai,
@@ -120,6 +131,7 @@ function Recommendation() {
       cost: "11,300",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Cultural",
     },
     {
       image: Andaman,
@@ -129,6 +141,7 @@ function Recommendation() {
       cost: "18,400",
       duration: "Approx 3 night trip",
       type: "Domestic",
+      category: "Beach",
     },
     {
       image: Maldives,
@@ -138,6 +151,7 @@ function Recommendation() {
       cost: "68,500",
       duration: "Approx 4 night trip",
       type: "International",
+      category: "Beach",
     },
     {
       image: Bali,
@@ -147,6 +161,7 @@ function Recommendation() {
       cost: "33,200",
       duration: "Approx 3 night trip",
       type: "International",
+      category: "Beach",
     },
     {
       image: Tokyo,
@@ -156,6 +171,7 @@ function Recommendation() {
       cost: "72,600",
       duration: "Approx 4 night 3 day trip",
       type: "International",
+      category: "Luxury",
     },
     {
       image: Rome,
@@ -165,6 +181,7 @@ function Recommendation() {
       cost: "56,000",
       duration: "Approx 3 night trip",
       type: "International",
+      category: "Cultural",
     },
     {
       image: Switzerland,
@@ -173,8 +190,10 @@ function Recommendation() {
       cost: "82,900",
       duration: "Approx 5 night trip",
       type: "International",
+      category: "Nature",
     },
-    // 🇮🇳 Domestic Destinations
+
+    // 🇮🇳 Domestic - Nature & Cultural
     {
       image: Kerala,
       title: "Kerala",
@@ -183,6 +202,7 @@ function Recommendation() {
       cost: "15,600",
       duration: "Approx 3 night trip",
       type: "Domestic",
+      category: "Nature",
     },
     {
       image: Darjeeling,
@@ -191,8 +211,8 @@ function Recommendation() {
       cost: "8,900",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Nature",
     },
-
     {
       image: Rishikesh,
       title: "Rishikesh",
@@ -201,6 +221,7 @@ function Recommendation() {
       cost: "9,000",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Spiritual",
     },
     {
       image: Shimla,
@@ -210,6 +231,7 @@ function Recommendation() {
       cost: "10,200",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Nature",
     },
     {
       image: Udaipur,
@@ -219,6 +241,7 @@ function Recommendation() {
       cost: "12,700",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Cultural",
     },
     {
       image: Kashmir,
@@ -228,6 +251,7 @@ function Recommendation() {
       cost: "14,900",
       duration: "Approx 3 night trip",
       type: "Domestic",
+      category: "Nature",
     },
     {
       image: Varanasi,
@@ -237,17 +261,368 @@ function Recommendation() {
       cost: "8,600",
       duration: "Approx 2 night trip",
       type: "Domestic",
+      category: "Spiritual",
+    },
+    // 🛕 4 Dham (Spiritual)
+    {
+      image: Varanasi,
+      title: "Badrinath",
+      subTitle:
+        "Badrinath, dedicated to Lord Vishnu, one of the Char Dhams in Uttarakhand.",
+      cost: "16,500",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Dwarka",
+      subTitle:
+        "Dwarka, Gujarat — sacred city of Lord Krishna, part of Char Dham.",
+      cost: "14,200",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Puri",
+      subTitle:
+        "Puri, Odisha — home to Lord Jagannath Temple and part of Char Dham.",
+      cost: "12,800",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Rameswaram",
+      subTitle:
+        "Rameswaram, Tamil Nadu — island temple town dedicated to Lord Shiva.",
+      cost: "17,400",
+      duration: "Approx 4 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+
+    // 🔱 12 Jyotirlingas (Spiritual)
+    {
+      image: Varanasi,
+      title: "Somnath",
+      subTitle:
+        "Somnath, Gujarat — the first among the 12 Jyotirlingas of Lord Shiva.",
+      cost: "13,500",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Mallikarjuna",
+      subTitle:
+        "Mallikarjuna, Srisailam — a major Jyotirlinga on the Krishna River.",
+      cost: "15,200",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Mahakaleshwar",
+      subTitle:
+        "Mahakaleshwar, Ujjain — famous temple of Lord Shiva, Jyotirlinga in Madhya Pradesh.",
+      cost: "10,600",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Omkareshwar",
+      subTitle:
+        "Omkareshwar, on Narmada River island, one of the 12 Jyotirlingas.",
+      cost: "9,800",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kedarnath",
+      subTitle:
+        "Kedarnath, Uttarakhand — high-altitude temple dedicated to Lord Shiva.",
+      cost: "14,900",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Bhimashankar",
+      subTitle:
+        "Bhimashankar, Maharashtra — temple in Sahyadri hills, Jyotirlinga of Lord Shiva.",
+      cost: "8,700",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kashi Vishwanath",
+      subTitle:
+        "Kashi Vishwanath, Varanasi — one of the holiest Shiva temples in India.",
+      cost: "9,000",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Trimbakeshwar",
+      subTitle:
+        "Trimbakeshwar, Nashik — sacred Jyotirlinga located near Godavari River.",
+      cost: "8,400",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Baidyanath",
+      subTitle:
+        "Baidyanath, Deoghar — known as Baba Dham, one of the 12 Jyotirlingas.",
+      cost: "10,200",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Nageshwar",
+      subTitle:
+        "Nageshwar, near Dwarka — one of the oldest Jyotirlinga shrines.",
+      cost: "11,500",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Rameshwaram Jyotirling",
+      subTitle:
+        "Rameshwaram — sacred Jyotirlinga located in Tamil Nadu, linked to Ramayana.",
+      cost: "16,800",
+      duration: "Approx 4 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Grishneshwar",
+      subTitle:
+        "Grishneshwar, near Ellora — last among the 12 Jyotirlingas of Shiva.",
+      cost: "8,900",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+
+    // 🕉️ 18 Shakti Peeth (Spiritual)
+    {
+      image: Varanasi,
+      title: "Kamakhya Temple",
+      subTitle:
+        "Kamakhya Temple, Assam — one of the most revered Shakti Peethas of Goddess Shakti.",
+      cost: "14,600",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kanyakumari Temple",
+      subTitle: "Kanyakumari, Tamil Nadu — where Goddess Parvati meditated.",
+      cost: "15,000",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Vaishno Devi",
+      subTitle:
+        "Vaishno Devi, Jammu — major pilgrimage in Trikuta Hills dedicated to Goddess Durga.",
+      cost: "13,200",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Jwalamukhi Temple",
+      subTitle: "Jwalamukhi, Himachal — temple of the flaming mouth Goddess.",
+      cost: "9,700",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kalighat Temple",
+      subTitle:
+        "Kalighat, Kolkata — one of the 51 Shakti Peethas of Goddess Kali.",
+      cost: "10,800",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Hinglaj Mata",
+      subTitle:
+        "Hinglaj Mata, Balochistan — ancient Shakti Peeth located in Hingol National Park.",
+      cost: "21,000",
+      duration: "Approx 4 night trip",
+      type: "International",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Vindhyavasini Devi",
+      subTitle: "Vindhyachal, UP — sacred seat of Goddess Durga.",
+      cost: "9,400",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Tarapith Temple",
+      subTitle: "Tarapith, West Bengal — famous Shakti Peeth of Goddess Tara.",
+      cost: "10,500",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Amarnath Cave Temple",
+      subTitle: "Amarnath, Jammu & Kashmir — sacred cave shrine of Lord Shiva.",
+      cost: "15,300",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Bhadrakali Temple",
+      subTitle: "Bhadrakali, Haryana — one of the ancient Shakti Peeths.",
+      cost: "8,800",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Meenakshi Temple",
+      subTitle:
+        "Madurai — architectural marvel and major Shakti Peeth of Goddess Parvati.",
+      cost: "14,500",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Chamundeshwari Temple",
+      subTitle:
+        "Mysuru, Karnataka — temple dedicated to Goddess Durga atop Chamundi Hills.",
+      cost: "11,400",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kalika Devi Temple",
+      subTitle:
+        "Ratnagiri, Maharashtra — one of the ancient Shakti Peeths on western coast.",
+      cost: "8,900",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Sharada Peeth",
+      subTitle:
+        "Sharada Peeth, Kashmir — ancient learning center and Shakti temple.",
+      cost: "15,700",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Bhramaramba Devi",
+      subTitle:
+        "Srisailam, Andhra Pradesh — Shakti Peeth paired with Mallikarjuna Jyotirlinga.",
+      cost: "14,200",
+      duration: "Approx 3 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Mahalakshmi Temple",
+      subTitle:
+        "Kolhapur — one of the sacred Shakti Peeths of Goddess Lakshmi.",
+      cost: "9,600",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Kanyakubja Peeth",
+      subTitle: "Kannauj, UP — ancient Shakti Peeth mentioned in Hindu texts.",
+      cost: "9,800",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Manasa Devi Temple",
+      subTitle:
+        "Haridwar, Uttarakhand — one of the most visited Shakti Peeth temples.",
+      cost: "10,200",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
+    },
+    {
+      image: Varanasi,
+      title: "Bhubaneshwari Temple",
+      subTitle:
+        "Odisha — dedicated to Goddess Bhuvaneshwari, part of 18 Maha Peeths.",
+      cost: "11,000",
+      duration: "Approx 2 night trip",
+      type: "Domestic",
+      category: "Spiritual",
     },
   ];
 
-  const packages = ["All Destinations", "Domestic", "International"];
+  const packages = ["International", "Domestic", "Religious"];
 
   // Filter logic
   let filteredData = data;
-  if (active === 1) {
+  if (active === 0) {
+    filteredData = data.filter((item) => item.type === "International");
+  } else if (active === 1) {
     filteredData = data.filter((item) => item.type === "Domestic");
   } else if (active === 2) {
-    filteredData = data.filter((item) => item.type === "International");
+    filteredData = data.filter((item) => item.category === "Spiritual");
   }
 
   // WhatsApp inquiry handler
