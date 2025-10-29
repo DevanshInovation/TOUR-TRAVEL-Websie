@@ -40,6 +40,46 @@
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
+/* ...existing code... */
+
+.searchInputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestionItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.suggestionItem:hover {
+  background-color: rgba(0, 180, 216, 0.1);
+}
+
+/* ...existing code... */
 
 .bookingContainer {
   display: flex;
