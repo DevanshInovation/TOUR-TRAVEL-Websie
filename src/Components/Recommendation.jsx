@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/Recommendation.css";
+import "../Styles/HomeRecommendations.css";
 import { FaWhatsapp, FaRupeeSign, FaClock } from "react-icons/fa";
 
 import Destination1 from "../assets/Destination1.png";

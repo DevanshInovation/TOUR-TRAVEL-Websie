@@ -1,0 +1,152 @@
+.slider-section {
+  width: 100%;
+  margin: 0 auto 1.7rem auto;
+  padding: 0;
+}
+
+.slider-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #01cfff;
+  padding-left: 3vw;
+  margin-bottom: 15px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #01cfff #f4f7fa;
+}
+
+.slider-row {
+  display: flex;
+  gap: 22px;
+  min-width: 600px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  scroll-behavior: smooth;
+}
+
+.slider-card {
+  flex: 0 0 245px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 14px #d2e6ed57;
+  padding: 0 0 18px 0;
+  min-height: 295px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-card img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.slider-card h3 {
+  margin: 13px 0 3px 0;
+  color: #01cfff;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+
+.slider-card p {
+  color: #222d;
+  font-size: 1.04rem;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* opt css */
+.slider-tabs {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.slider-tab {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.slider-tab.active {
+  background: #eafdff;
+  color: #03bcd4;
+  border-bottom: 3px solid #03bcd4;
+  font-weight: 700;
+}
+
+.see-all-btn {
+  font-size: 15px;
+  color: #03bcd4;
+  padding: 7px 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* center push */
+.recommendation {
+  /* Tumhara outer section */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* IMPORTANT: sab child center kare */
+  justify-content: center;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: center; /* Center heading + see all horizontally */
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.slider-title {
+  text-align: center;
+  width: auto;
+}
+
+.slider-tabs {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  justify-content: center;   /* IMPORTANT: tabs ko center kare */
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* slider row center me dikhe */
+}
+
+.slider-row {
+  display: flex;
+  gap: 24px;
+}
+
+
+@media (max-width: 1200px) { .slider-card { flex-basis: 210px; } }
+@media (max-width: 800px)  { .slider-card { flex-basis: 170px; } .slider-title { font-size: 1.42rem; } }
+@media (max-width: 600px)  { .slider-card { flex-basis: 84vw; min-width:239px; } }
